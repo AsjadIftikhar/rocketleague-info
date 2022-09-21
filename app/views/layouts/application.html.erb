@@ -5,16 +5,31 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 </head>
 
+<%= render "devise/shared/authnav" %>
+
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<% if notice %>
+  <div class="p-4 mb-4 text-sm text-blue-700 bg-blue-100 rounded-lg" role="alert">
+    <p class="notice"><%= notice %></p>
+  </div>
+<% end %>
+
+<% if alert %>
+  <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg" role="alert">
+    <p class="alert"><%= alert %></p>
+  </div>
+<% end %>
+
+
 <%= yield %>
+
+<%= render "devise/shared/footer" %>
 
 <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"/>
 </body>
