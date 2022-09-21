@@ -649,3 +649,78 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.6ms | Allocations: 2517)
 
 
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2022-09-21 15:04:34 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 28ms (ActiveRecord: 1.1ms | Allocations: 6945)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 15:04:34 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 330)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1362)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 1665)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-09-21 15:04:36 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 573)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2142)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3201)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4440)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-09-21 15:04:39 +0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 278)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1392)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2459)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3721)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 15:10:23 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1078)
+  Rendered layout layouts/application.html.erb (Duration: 119.4ms | Allocations: 130311)
+Completed 200 OK in 125ms (Views: 121.0ms | ActiveRecord: 0.0ms | Allocations: 135686)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 15:10:25 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5521)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 5829)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 15:10:59 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 568)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 6089)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 7129)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 15:11:39 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 573)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 6093)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7130)
+
+
