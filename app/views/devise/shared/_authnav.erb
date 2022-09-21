@@ -4,5 +4,17 @@
                         <span class="self-center text-white text-2xl font-medium whitespace-nowrap">
                             Rocket League Info</span>
     </a>
+
+    <div class="flex justify-end space-x-8">
+      <% if user_signed_in? %>
+        <div><%= link_to current_user.email, edit_user_registration_path, class: "text-white hover:bg-gray-50 hover:text-gray-800 rounded"%></div>
+        <button><%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "text-white hover:bg-gray-50 hover:text-gray-800 rounded" %></button>
+      <% else %>
+        <div><%= link_to "Sign In", new_user_session_path, class: "text-white hover:bg-gray-50 hover:text-gray-800 rounded" %></div>
+      <% end %>
+    </div>
+
   </div>
+
+
 </nav>

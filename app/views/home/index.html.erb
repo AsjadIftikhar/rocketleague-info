@@ -2,15 +2,9 @@
   <div>
     <main class="px-6">
 
-      <div class="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 ">
-        <% if user_signed_in? %>
-          <button><%= button_to "Sign Out", destroy_user_session_path, method: :delete %></button>
-          <li><%= link_to current_user.email, edit_user_registration_path %></li>
-        <% else %>
-          <p>You are Signed Out!</p>
-          <li><%= link_to "Sign In", new_user_session_path %></li>
-        <% end %>
-      </div>
+<!--      <div class="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 ">-->
+
+<!--      </div>-->
 
     </main>
   </div>
