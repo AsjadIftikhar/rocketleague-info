@@ -1,24 +1,3 @@
-<nav class="bg-gray-900 px-2 sm:px-4 py-8">
-  <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <a href="#" class="flex items-center">
-                        <span class="self-center text-white text-2xl font-medium whitespace-nowrap">
-                            Rocket League Info</span>
-    </a>
-  </div>
-</nav>
-
-<div class="flex justify-center fixed top-0 right-0 left-0 my-12">
-  <div>
-    <main class="px-6">
-
-      <div class="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 ">
-
-      </div>
-
-    </main>
-  </div>
-</div>
-
 <div class="fixed bottom-0 right-0 left-0">
   <div>
     <footer class="bg-gradient-to-r from-cyan-500 to-blue-500">
@@ -66,16 +45,3 @@
     </footer>
   </div>
 </div>
-
-
-
-<% if user_signed_in? %>
-  <button><%= button_to "Sign Out", destroy_user_session_path, method: :delete %></button>
-  <li><%= link_to current_user.email, edit_user_registration_path %></li>
-<% else %>
-  <p>You are Signed Out!</p>
-  <li><%=link_to "Sign In", new_user_session_path %></li>
-<% end %>
-
-
-
