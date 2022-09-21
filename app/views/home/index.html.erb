@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+  <button><%= button_to "Sign Out", destroy_user_session_path, method: :delete %></button>
+  <li><%= link_to current_user.email, edit_user_registration_path %></li>
+<% else %>
+  <p>You are Signed Out!</p>
+  <li><%= link_to "Sign In", new_user_session_path %></li>
+<% end %>
+
