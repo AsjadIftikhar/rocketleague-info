@@ -8,8 +8,8 @@
 // $sidebar-width: 242px;
 
 // Active Admin's got SASS!
-@import "active_admin/mixins";
-@import "active_admin/base";
+@import "../../../../../.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/assets/stylesheets/active_admin/mixins";
+@import "../../../../../.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/assets/stylesheets/active_admin/base";
 
 // Overriding any non-variable Sass must be done after the fact.
 // For example, to change the default status-tag color:
