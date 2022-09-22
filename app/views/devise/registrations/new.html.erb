@@ -9,6 +9,21 @@
           <%= render "devise/shared/error_messages", resource: resource %>
 
           <div class="py-2">
+            <%= f.label :first_name %><br />
+            <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name", class:"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-8" %>
+          </div>
+
+          <div class="py-2">
+            <%= f.label :last_name %><br />
+            <%= f.text_field :last_name, autofocus: true, autocomplete: "last_name", class:"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-8" %>
+          </div>
+
+          <div class="py-2">
+            <%= f.label "Notifications" %><br />
+            <%= f.check_box :notification_on, autofocus: true %>
+          </div>
+
+          <div class="py-2">
             <%= f.label :email %><br />
             <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 px-8" %>
           </div>

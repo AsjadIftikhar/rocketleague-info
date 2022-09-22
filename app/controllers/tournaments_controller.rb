@@ -1,4 +1,6 @@
 class TournamentsController < ApplicationController
+  before_action :authenticate_user!
+  load_and_authorize_resource
   def index
     @tournaments = Tournament.all
   end
@@ -12,7 +14,7 @@ class TournamentsController < ApplicationController
   end
 
   def create
-    @tournament = Tournament.new(article_params)
+    @tournament = Tournament.new(tournament_params)
 
     if @tournament.save
       redirect_to(:controller => 'tournaments', :action => 'index')
@@ -28,7 +30,7 @@ class TournamentsController < ApplicationController
   def update
     @tournament = Tournament.find(params[:id])
 
-    if @tournament.update(article_params)
+    if @tournament.update(tournament_params)
       redirect_to @tournament
     else
       render :edit, status: :unprocessable_entity
@@ -44,7 +46,7 @@ class TournamentsController < ApplicationController
 
   private
 
-  def article_params
+  def tournament_params
     params.require(:tournament).permit(:title, :location, :start_date, :end_date)
   end
 
