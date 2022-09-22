@@ -20660,3 +20660,2033 @@ Processing by TournamentsController#index as HTML
 Completed 200 OK in 35ms (Views: 21.5ms | ActiveRecord: 2.1ms | Allocations: 14103)
 
 
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 15:44:57 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.5ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2736)
+  Rendered devise/shared/_navbar.erb (Duration: 0.7ms | Allocations: 511)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 13992)
+Completed 200 OK in 30ms (Views: 21.7ms | ActiveRecord: 1.3ms | Allocations: 16717)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 15:47:55 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.7ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2733)
+  Rendered devise/shared/_navbar.erb (Duration: 0.7ms | Allocations: 511)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 14000)
+Completed 200 OK in 35ms (Views: 22.2ms | ActiveRecord: 1.5ms | Allocations: 16716)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 15:48:02 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2733)
+  Rendered devise/shared/_navbar.erb (Duration: 0.4ms | Allocations: 511)
+  Rendered devise/shared/_footer.erb (Duration: 0.2ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 13599)
+Completed 200 OK in 24ms (Views: 13.5ms | ActiveRecord: 0.9ms | Allocations: 16313)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 15:48:33 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.5ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2733)
+  Rendered devise/shared/_navbar.erb (Duration: 0.8ms | Allocations: 511)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 13597)
+Completed 200 OK in 32ms (Views: 24.0ms | ActiveRecord: 1.0ms | Allocations: 16301)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 15:48:40 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2733)
+  Rendered devise/shared/_navbar.erb (Duration: 0.4ms | Allocations: 511)
+  Rendered devise/shared/_footer.erb (Duration: 0.2ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 13831)
+Completed 200 OK in 28ms (Views: 18.0ms | ActiveRecord: 0.8ms | Allocations: 16545)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 15:49:01 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2733)
+  Rendered devise/shared/_navbar.erb (Duration: 0.7ms | Allocations: 511)
+  Rendered devise/shared/_footer.erb (Duration: 0.4ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 13757)
+Completed 200 OK in 32ms (Views: 18.1ms | ActiveRecord: 1.0ms | Allocations: 16477)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 15:49:09 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (1.7ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2733)
+  Rendered devise/shared/_navbar.erb (Duration: 0.4ms | Allocations: 511)
+  Rendered devise/shared/_footer.erb (Duration: 0.2ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 13592)
+Completed 200 OK in 46ms (Views: 25.4ms | ActiveRecord: 4.1ms | Allocations: 16300)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 15:49:10 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2335)
+  Rendered devise/shared/_navbar.erb (Duration: 0.1ms | Allocations: 274)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 12168)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 1.5ms | Allocations: 14102)
+
+
+Started GET "/tournaments/show_news" for 127.0.0.1 at 2022-09-22 15:53:43 +0500
+Processing by TournamentsController#show as HTML
+  Parameters: {"id"=>"show_news"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.1ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 26ms (ActiveRecord: 19.1ms | Allocations: 10398)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Tournament with 'id'=show_news):
+  
+activerecord (7.0.4) lib/active_record/core.rb:284:in `find'
+cancancan (3.4.0) lib/cancan/model_adapters/abstract_adapter.rb:24:in `find'
+cancancan (3.4.0) lib/cancan/controller_resource_finder.rb:13:in `find_resource'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:110:in `load_resource_instance'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/tournaments/show_news" for 127.0.0.1 at 2022-09-22 15:58:27 +0500
+Processing by TournamentsController#show as HTML
+  Parameters: {"id"=>"show_news"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (1.8ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 20ms (ActiveRecord: 2.6ms | Allocations: 2623)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Tournament with 'id'=show_news):
+  
+activerecord (7.0.4) lib/active_record/core.rb:284:in `find'
+cancancan (3.4.0) lib/cancan/model_adapters/abstract_adapter.rb:24:in `find'
+cancancan (3.4.0) lib/cancan/controller_resource_finder.rb:13:in `find_resource'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:110:in `load_resource_instance'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/tournaments/show_news" for 127.0.0.1 at 2022-09-22 15:58:54 +0500
+Processing by TournamentsController#show as HTML
+  Parameters: {"id"=>"show_news"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.1ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 32ms (ActiveRecord: 20.8ms | Allocations: 10391)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Tournament with 'id'=show_news):
+  
+activerecord (7.0.4) lib/active_record/core.rb:284:in `find'
+cancancan (3.4.0) lib/cancan/model_adapters/abstract_adapter.rb:24:in `find'
+cancancan (3.4.0) lib/cancan/controller_resource_finder.rb:13:in `find_resource'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:110:in `load_resource_instance'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/tournaments/show_news" for 127.0.0.1 at 2022-09-22 15:58:56 +0500
+Processing by TournamentsController#show as HTML
+  Parameters: {"id"=>"show_news"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 0.4ms | Allocations: 2623)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Tournament with 'id'=show_news):
+  
+activerecord (7.0.4) lib/active_record/core.rb:284:in `find'
+cancancan (3.4.0) lib/cancan/model_adapters/abstract_adapter.rb:24:in `find'
+cancancan (3.4.0) lib/cancan/controller_resource_finder.rb:13:in `find_resource'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:110:in `load_resource_instance'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/tournaments/show_news" for 127.0.0.1 at 2022-09-22 15:58:56 +0500
+Processing by TournamentsController#show as HTML
+  Parameters: {"id"=>"show_news"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 0.7ms | Allocations: 2622)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Tournament with 'id'=show_news):
+  
+activerecord (7.0.4) lib/active_record/core.rb:284:in `find'
+cancancan (3.4.0) lib/cancan/model_adapters/abstract_adapter.rb:24:in `find'
+cancancan (3.4.0) lib/cancan/controller_resource_finder.rb:13:in `find_resource'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:110:in `load_resource_instance'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/news" for 127.0.0.1 at 2022-09-22 15:59:14 +0500
+Processing by TournamentsController#show_news as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/show_news.html.erb within layouts/application
+  Rendered tournaments/show_news.html.erb within layouts/application (Duration: 0.4ms | Allocations: 104)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 555)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 11439)
+Completed 200 OK in 27ms (Views: 13.1ms | ActiveRecord: 6.9ms | Allocations: 21088)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 15:59:43 +0500
+Processing by TournamentsController#show_news as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/show_news.html.erb within layouts/application
+  Rendered tournaments/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered devise/shared/_navbar.erb (Duration: 0.6ms | Allocations: 290)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 10232)
+Completed 200 OK in 43ms (Views: 22.8ms | ActiveRecord: 0.7ms | Allocations: 12167)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 15:59:47 +0500
+Processing by TournamentsController#show_news as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/show_news.html.erb within layouts/application
+  Rendered tournaments/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 290)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 9872)
+Completed 200 OK in 26ms (Views: 18.4ms | ActiveRecord: 0.6ms | Allocations: 11805)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:01:20 +0500
+Processing by ApplicationController#show_news as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 785)
+
+
+  
+ActionController::MissingExactTemplate (ApplicationController#show_news is missing a template for request formats: text/html):
+  
+actionpack (7.0.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:01:39 +0500
+Processing by ApplicationController#show_news as HTML
+Completed 406 Not Acceptable in 7ms (ActiveRecord: 0.0ms | Allocations: 781)
+
+
+  
+ActionController::MissingExactTemplate (ApplicationController#show_news is missing a template for request formats: text/html):
+  
+actionpack (7.0.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:01:40 +0500
+Processing by ApplicationController#show_news as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 554)
+
+
+  
+ActionController::MissingExactTemplate (ApplicationController#show_news is missing a template for request formats: text/html):
+  
+actionpack (7.0.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:01:40 +0500
+Processing by ApplicationController#show_news as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 554)
+
+
+  
+ActionController::MissingExactTemplate (ApplicationController#show_news is missing a template for request formats: text/html):
+  
+actionpack (7.0.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:01:41 +0500
+Processing by ApplicationController#show_news as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 554)
+
+
+  
+ActionController::MissingExactTemplate (ApplicationController#show_news is missing a template for request formats: text/html):
+  
+actionpack (7.0.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:02:17 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.6ms | Allocations: 102)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 16.8ms | Allocations: 5041)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 16114)
+Completed 200 OK in 54ms (Views: 43.1ms | ActiveRecord: 8.2ms | Allocations: 17067)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:03:11 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4793)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 4865)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 5810)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `x' for #<ActionView::Base:0x00000000046730>):
+    1: <div><%= x %></div>
+  
+app/views/application/show_news.html.erb:1
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:03:39 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.2ms | Allocations: 128)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 15.0ms | Allocations: 5041)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 16155)
+Completed 200 OK in 24ms (Views: 15.9ms | ActiveRecord: 8.0ms | Allocations: 17130)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:04:00 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.8ms | Allocations: 127)
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 10.3ms | Allocations: 1303)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 11988)
+Completed 200 OK in 33ms (Views: 25.2ms | ActiveRecord: 6.2ms | Allocations: 12937)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 16:04:01 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.5ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 30.5ms | Allocations: 5677)
+  Rendered devise/shared/_navbar.erb (Duration: 0.2ms | Allocations: 285)
+  Rendered devise/shared/_footer.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 15991)
+Completed 200 OK in 51ms (Views: 31.3ms | ActiveRecord: 10.6ms | Allocations: 21764)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:04:02 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 13)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 2.5ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 10822)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 11110)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:20:29 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.2ms | Allocations: 139)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 105.0ms | Allocations: 7522)
+  Rendered devise/shared/_footer.erb (Duration: 0.9ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 119.9ms | Allocations: 18240)
+Completed 200 OK in 121ms (Views: 120.7ms | ActiveRecord: 59.9ms | Allocations: 19210)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for 127.0.0.1 at 2022-09-22 16:20:29 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:26:23 +0500
+Processing by ApplicationController#show_news as HTML
+Completed 500 Internal Server Error in 0ms (Allocations: 481)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): " https://www.rocketleague.com/ajax/articles-infinite/"):
+  
+app/controllers/application_controller.rb:7:in `show_news'
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:26:47 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.5ms | Allocations: 153)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 64.4ms | Allocations: 7558)
+  Rendered devise/shared/_footer.erb (Duration: 0.9ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 94.2ms | Allocations: 19580)
+Completed 500 Internal Server Error in 943ms (ActiveRecord: 19.8ms | Allocations: 21875)
+
+
+  
+ActionView::Template::Error (incompatible character encodings: ASCII-8BIT and UTF-8):
+    58:   <div class="p-4 w-full">
+    59:     <%= yield %>
+    60: 
+    61:     <%= render "devise/shared/footer" %>
+    62:   </div>
+    63: </div>
+    64: 
+  
+app/views/layouts/application.html.erb:61
+Started GET "/" for 127.0.0.1 at 2022-09-22 16:27:16 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 34.5ms | Allocations: 22065)
+  Rendered devise/shared/_footer.erb (Duration: 0.4ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 84.3ms | Allocations: 104247)
+Completed 200 OK in 91ms (Views: 60.1ms | ActiveRecord: 26.3ms | Allocations: 109700)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 16:27:22 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (1.5ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 18280)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 285)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 28185)
+Completed 200 OK in 42ms (Views: 27.2ms | ActiveRecord: 6.1ms | Allocations: 31191)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:27:24 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 2.0ms | Allocations: 147)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 6.8ms | Allocations: 1089)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 12753)
+Completed 500 Internal Server Error in 746ms (ActiveRecord: 0.7ms | Allocations: 14942)
+
+
+  
+ActionView::Template::Error (incompatible character encodings: ASCII-8BIT and UTF-8):
+    58:   <div class="p-4 w-full">
+    59:     <%= yield %>
+    60: 
+    61:     <%= render "devise/shared/footer" %>
+    62:   </div>
+    63: </div>
+    64: 
+  
+app/views/layouts/application.html.erb:61
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 16:27:34 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (0.4ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2338)
+  Rendered devise/shared/_navbar.erb (Duration: 0.6ms | Allocations: 274)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 12326)
+Completed 200 OK in 26ms (Views: 18.6ms | ActiveRecord: 1.0ms | Allocations: 14295)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:27:36 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.2ms | Allocations: 9)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 6.8ms | Allocations: 1057)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 11771)
+Completed 500 Internal Server Error in 720ms (ActiveRecord: 1.5ms | Allocations: 13139)
+
+
+  
+ActionView::Template::Error (incompatible character encodings: ASCII-8BIT and UTF-8):
+    58:   <div class="p-4 w-full">
+    59:     <%= yield %>
+    60: 
+    61:     <%= render "devise/shared/footer" %>
+    62:   </div>
+    63: </div>
+    64: 
+  
+app/views/layouts/application.html.erb:61
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:28:03 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.1ms | Allocations: 161)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 5.3ms | Allocations: 1302)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 13070)
+Completed 500 Internal Server Error in 622ms (ActiveRecord: 0.7ms | Allocations: 15095)
+
+
+  
+ActionView::Template::Error (incompatible character encodings: ASCII-8BIT and UTF-8):
+    58:   <div class="p-4 w-full">
+    59:     <%= yield %>
+    60: 
+    61:     <%= render "devise/shared/footer" %>
+    62:   </div>
+    63: </div>
+    64: 
+  
+app/views/layouts/application.html.erb:61
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:28:14 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.3ms | Allocations: 159)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 16.0ms | Allocations: 1303)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 12175)
+Completed 200 OK in 642ms (Views: 54.7ms | ActiveRecord: 0.9ms | Allocations: 14232)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:28:16 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 3.6ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 10830)
+Completed 200 OK in 517ms (Views: 28.4ms | ActiveRecord: 0.5ms | Allocations: 12192)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:28:35 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 6.7ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 10810)
+Completed 200 OK in 932ms (Views: 40.2ms | ActiveRecord: 0.6ms | Allocations: 12169)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:29:11 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 13.6ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 10832)
+Completed 200 OK in 670ms (Views: 48.3ms | ActiveRecord: 0.5ms | Allocations: 12197)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:29:13 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 4.3ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 10828)
+Completed 200 OK in 483ms (Views: 26.2ms | ActiveRecord: 0.4ms | Allocations: 12187)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 16:29:31 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 385)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 31.5ms | Allocations: 22065)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 78.9ms | Allocations: 104614)
+Completed 200 OK in 86ms (Views: 61.9ms | ActiveRecord: 19.1ms | Allocations: 110067)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:29:33 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.0ms | Allocations: 156)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 5.0ms | Allocations: 1090)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 11080)
+Completed 200 OK in 617ms (Views: 23.3ms | ActiveRecord: 0.5ms | Allocations: 13282)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:29:35 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 4.8ms | Allocations: 1057)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 10844)
+Completed 200 OK in 454ms (Views: 21.4ms | ActiveRecord: 0.6ms | Allocations: 12209)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:29:53 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 11.4ms | Allocations: 4793)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 14811)
+Completed 200 OK in 465ms (Views: 32.5ms | ActiveRecord: 7.2ms | Allocations: 16627)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:29:53 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 18.9ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 10822)
+Completed 200 OK in 466ms (Views: 29.0ms | ActiveRecord: 0.4ms | Allocations: 12220)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:39:32 +0500
+Processing by ApplicationController#show_news as HTML
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:39:34 +0500
+Completed 500 Internal Server Error in 3653ms (Allocations: 5362)
+
+
+  
+NoMethodError (undefined method `html' for #<ApplicationController:0x00000000022bf0>):
+  
+app/controllers/application_controller.rb:10:in `show_news'
+Processing by ApplicationController#show_news as HTML
+Completed 500 Internal Server Error in 4542ms (Allocations: 4527)
+
+
+  
+NoMethodError (undefined method `html' for #<ApplicationController:0x0000000002ac10>):
+  
+app/controllers/application_controller.rb:10:in `show_news'
+Started GET "/" for 127.0.0.1 at 2022-09-22 16:40:17 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 385)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 25.5ms | Allocations: 22066)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 85.1ms | Allocations: 104521)
+Completed 200 OK in 91ms (Views: 77.4ms | ActiveRecord: 9.8ms | Allocations: 109974)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:40:19 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.7ms | Allocations: 157)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 2.8ms | Allocations: 1089)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 11091)
+Completed 200 OK in 651ms (Views: 19.4ms | ActiveRecord: 0.4ms | Allocations: 21763)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:41:10 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 47.0ms | Allocations: 15502)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 15575)
+Completed 500 Internal Server Error in 1297ms (ActiveRecord: 0.0ms | Allocations: 25984)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Nokogiri::HTML4::Document:0xd82c name="document" children=[#<Nokogiri::XML::DTD:0xb7e8 name="html">, #<Nokogiri::XML::Element:0xd818 name="html" children=[#<Nokogiri::XML::Element:0xd804 name="body" children=[#<Nokogiri::XML::Element:0xba7c name="div" attributes=[#<Nokogiri::XML::Attr:0xb7fc name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xb810 name="data-index" value="13">, #<Nokogiri::XML::Attr:0xb824 name="data-id" value="7-c2cf82dfde-7bxspc">] children=[#<Nokogiri::XML::Text:0xb838 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xba54 name="a" attributes=[#<Nokogiri::XML::Attr:0xb84c name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xb860 name="href" value="/news/patch-notes-v2-18/">] children=[#<Nokogiri::XML::Text:0xb874 "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xba2c name="div" attributes=[#<Nokogiri::XML::Attr:0xb888 name="class" value="news-tile patch-notes skip12">] children=[#<Nokogiri::XML::Text:0xb89c "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xba04 name="div" attributes=[#<Nokogiri::XML::Attr:0xb8b0 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xb8c4 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xb900 name="img" attributes=[#<Nokogiri::XML::Attr:0xb8d8 name="src" value="https://rocketleague.media.zestyio.com/rl_knockout_bash_2022_monarch_boost_16x9.S1vEq-UE9.e84a9f5c1e622635a7576cba638d36f5.S1yLp_oic.jpg">, #<Nokogiri::XML::Attr:0xb8ec name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xb914 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xb9dc name="div" attributes=[#<Nokogiri::XML::Attr:0xb928 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xb93c "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xb9b4 name="div" attributes=[#<Nokogiri::XML::Attr:0xb950 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xb964 "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xb98c name="h3" children=[#<Nokogiri::XML::Text:0xb978 "\n\t\t\t\t\t\t\t\t\t\tPatch Notes v2.18\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xb9a0 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xb9c8 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xb9f0 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xba18 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xba40 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xba68 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xba90 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xbd24 name="div" attributes=[#<Nokogiri::XML::Attr:0xbaa4 name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xbab8 name="data-index" value="14">, #<Nokogiri::XML::Attr:0xbacc name="data-id" value="7-96b4ebb9f4-dr8qhs">] children=[#<Nokogiri::XML::Text:0xbae0 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xbcfc name="a" attributes=[#<Nokogiri::XML::Attr:0xbaf4 name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xbb08 name="href" value="/news/rocket-leagues-7th-birthday-7-questions-with-7-players/">] children=[#<Nokogiri::XML::Text:0xbb1c "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbcd4 name="div" attributes=[#<Nokogiri::XML::Attr:0xbb30 name="class" value="news-tile  skip12">] children=[#<Nokogiri::XML::Text:0xbb44 "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbcac name="div" attributes=[#<Nokogiri::XML::Attr:0xbb58 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xbb6c "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbba8 name="img" attributes=[#<Nokogiri::XML::Attr:0xbb80 name="src" value="https://rocketleague.media.zestyio.com/rl_lte_b-day_screens_tophat_opt.e84a9f5c1e622635a7576cba638d36f5.jpg">, #<Nokogiri::XML::Attr:0xbb94 name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xbbbc "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbc84 name="div" attributes=[#<Nokogiri::XML::Attr:0xbbd0 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xbbe4 "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbc5c name="div" attributes=[#<Nokogiri::XML::Attr:0xbbf8 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xbc0c "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbc34 name="h3" children=[#<Nokogiri::XML::Text:0xbc20 "\n\t\t\t\t\t\t\t\t\t\tRocket League's 7th Birthday: 7 Questions with 7 Players\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbc48 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbc70 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbc98 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbcc0 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbce8 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbd10 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xbd38 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xbfcc name="div" attributes=[#<Nokogiri::XML::Attr:0xbd4c name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xbd60 name="data-index" value="15">, #<Nokogiri::XML::Attr:0xbd74 name="data-id" value="7-c8f69e97dc-knfqzz">] children=[#<Nokogiri::XML::Text:0xbd88 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xbfa4 name="a" attributes=[#<Nokogiri::XML::Attr:0xbd9c name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xbdb0 name="href" value="/news/play-rocket-league-sideswipe-to-earn-rewards-in-both-games/">] children=[#<Nokogiri::XML::Text:0xbdc4 "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbf7c name="div" attributes=[#<Nokogiri::XML::Attr:0xbdd8 name="class" value="news-tile announcements skip12">] children=[#<Nokogiri::XML::Text:0xbdec "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbf54 name="div" attributes=[#<Nokogiri::XML::Attr:0xbe00 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xbe14 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbe50 name="img" attributes=[#<Nokogiri::XML::Attr:0xbe28 name="src" value="https://rocketleague.media.zestyio.com/84336031_623901391708369_3176944994833399808_n.e84a9f5c1e622635a7576cba638d36f5.jpg">, #<Nokogiri::XML::Attr:0xbe3c name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xbe64 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbf2c name="div" attributes=[#<Nokogiri::XML::Attr:0xbe78 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xbe8c "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbf04 name="div" attributes=[#<Nokogiri::XML::Attr:0xbea0 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xbeb4 "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xbedc name="h3" children=[#<Nokogiri::XML::Text:0xbec8 "\n\t\t\t\t\t\t\t\t\t\tPlay Rocket League Sideswipe to Earn Rewards in Both Games\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbef0 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbf18 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbf40 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbf68 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbf90 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xbfb8 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xbfe0 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xc274 name="div" attributes=[#<Nokogiri::XML::Attr:0xbff4 name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xc008 name="data-index" value="16">, #<Nokogiri::XML::Attr:0xc01c name="data-id" value="7-aae69dc3dd-x4ntnl">] children=[#<Nokogiri::XML::Text:0xc030 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xc24c name="a" attributes=[#<Nokogiri::XML::Attr:0xc044 name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xc058 name="href" value="/news/celebrate-7-years-of-rocket-league-with-birthday-ball/">] children=[#<Nokogiri::XML::Text:0xc06c "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc224 name="div" attributes=[#<Nokogiri::XML::Attr:0xc080 name="class" value="news-tile announcements skip12">] children=[#<Nokogiri::XML::Text:0xc094 "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc1fc name="div" attributes=[#<Nokogiri::XML::Attr:0xc0a8 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xc0bc "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc0f8 name="img" attributes=[#<Nokogiri::XML::Attr:0xc0d0 name="src" value="https://rocketleague.media.zestyio.com/22.e84a9f5c1e622635a7576cba638d36f5.jpg">, #<Nokogiri::XML::Attr:0xc0e4 name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xc10c "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc1d4 name="div" attributes=[#<Nokogiri::XML::Attr:0xc120 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xc134 "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc1ac name="div" attributes=[#<Nokogiri::XML::Attr:0xc148 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xc15c "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc184 name="h3" children=[#<Nokogiri::XML::Text:0xc170 "\n\t\t\t\t\t\t\t\t\t\tCelebrate 7 Years of Rocket League with Birthday Ball!\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc198 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc1c0 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc1e8 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc210 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc238 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc260 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xc288 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xc51c name="div" attributes=[#<Nokogiri::XML::Attr:0xc29c name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xc2b0 name="data-index" value="17">, #<Nokogiri::XML::Attr:0xc2c4 name="data-id" value="7-98a5d68cbb-rlzv6g">] children=[#<Nokogiri::XML::Text:0xc2d8 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xc4f4 name="a" attributes=[#<Nokogiri::XML::Attr:0xc2ec name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xc300 name="href" value="/news/get-rocket-league-rewards-as-fall-guys-goes-free-on-all-platforms/">] children=[#<Nokogiri::XML::Text:0xc314 "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc4cc name="div" attributes=[#<Nokogiri::XML::Attr:0xc328 name="class" value="news-tile announcements skip12">] children=[#<Nokogiri::XML::Text:0xc33c "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc4a4 name="div" attributes=[#<Nokogiri::XML::Attr:0xc350 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xc364 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc3a0 name="img" attributes=[#<Nokogiri::XML::Attr:0xc378 name="src" value="https://rocketleague.media.zestyio.com/6565656.e84a9f5c1e622635a7576cba638d36f5.H1Sun7Kqq.jpg">, #<Nokogiri::XML::Attr:0xc38c name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xc3b4 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc47c name="div" attributes=[#<Nokogiri::XML::Attr:0xc3c8 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xc3dc "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc454 name="div" attributes=[#<Nokogiri::XML::Attr:0xc3f0 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xc404 "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc42c name="h3" children=[#<Nokogiri::XML::Text:0xc418 "\n\t\t\t\t\t\t\t\t\t\tGet Rocket League Rewards as Fall Guys Goes Free on All Platforms\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc440 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc468 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc490 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc4b8 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc4e0 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc508 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xc530 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xc7c4 name="div" attributes=[#<Nokogiri::XML::Attr:0xc544 name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xc558 name="data-index" value="18">, #<Nokogiri::XML::Attr:0xc56c name="data-id" value="7-bcf684c5b8-ljm2xt">] children=[#<Nokogiri::XML::Text:0xc580 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xc79c name="a" attributes=[#<Nokogiri::XML::Attr:0xc594 name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xc5a8 name="href" value="/news/patch-notes-v2-17/">] children=[#<Nokogiri::XML::Text:0xc5bc "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc774 name="div" attributes=[#<Nokogiri::XML::Attr:0xc5d0 name="class" value="news-tile patch-notes skip12">] children=[#<Nokogiri::XML::Text:0xc5e4 "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc74c name="div" attributes=[#<Nokogiri::XML::Attr:0xc5f8 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xc60c "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc648 name="img" attributes=[#<Nokogiri::XML::Attr:0xc620 name="src" value="https://rocketleague.media.zestyio.com/rl_s7_rp_free_3.rJ22EoH_c.e84a9f5c1e622635a7576cba638d36f5.jpg">, #<Nokogiri::XML::Attr:0xc634 name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xc65c "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc724 name="div" attributes=[#<Nokogiri::XML::Attr:0xc670 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xc684 "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc6fc name="div" attributes=[#<Nokogiri::XML::Attr:0xc698 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xc6ac "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc6d4 name="h3" children=[#<Nokogiri::XML::Text:0xc6c0 "\n\t\t\t\t\t\t\t\t\t\tPatch Notes v2.17\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc6e8 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc710 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc738 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc760 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc788 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc7b0 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xc7d8 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xca6c name="div" attributes=[#<Nokogiri::XML::Attr:0xc7ec name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xc800 name="data-index" value="19">, #<Nokogiri::XML::Attr:0xc814 name="data-id" value="7-fc99efea96-j6c3s6">] children=[#<Nokogiri::XML::Text:0xc828 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xca44 name="a" attributes=[#<Nokogiri::XML::Attr:0xc83c name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xc850 name="href" value="/news/esports-team-goal-explosions-arrive-in-the-esports-shop-tomorrow/">] children=[#<Nokogiri::XML::Text:0xc864 "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xca1c name="div" attributes=[#<Nokogiri::XML::Attr:0xc878 name="class" value="news-tile announcements skip12">] children=[#<Nokogiri::XML::Text:0xc88c "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc9f4 name="div" attributes=[#<Nokogiri::XML::Attr:0xc8a0 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xc8b4 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc8f0 name="img" attributes=[#<Nokogiri::XML::Attr:0xc8c8 name="src" value="https://rocketleague.media.zestyio.com/a8d59ddd-0443-4418-8845-ab5b6464d05b.e84a9f5c1e622635a7576cba638d36f5.jpg">, #<Nokogiri::XML::Attr:0xc8dc name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xc904 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc9cc name="div" attributes=[#<Nokogiri::XML::Attr:0xc918 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xc92c "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc9a4 name="div" attributes=[#<Nokogiri::XML::Attr:0xc940 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xc954 "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xc97c name="h3" children=[#<Nokogiri::XML::Text:0xc968 "\n\t\t\t\t\t\t\t\t\t\tTeam Goal Explosions Arrive in the Esports Shop Tomorrow\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc990 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc9b8 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xc9e0 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xca08 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xca30 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xca58 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xca80 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xcd14 name="div" attributes=[#<Nokogiri::XML::Attr:0xca94 name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xcaa8 name="data-index" value="20">, #<Nokogiri::XML::Attr:0xcabc name="data-id" value="7-96c08fe2d1-ndhcb4">] children=[#<Nokogiri::XML::Text:0xcad0 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xccec name="a" attributes=[#<Nokogiri::XML::Attr:0xcae4 name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xcaf8 name="href" value="/news/patch-notes-season-7-live/">] children=[#<Nokogiri::XML::Text:0xcb0c "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xccc4 name="div" attributes=[#<Nokogiri::XML::Attr:0xcb20 name="class" value="news-tile patch-notes skip12">] children=[#<Nokogiri::XML::Text:0xcb34 "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcc9c name="div" attributes=[#<Nokogiri::XML::Attr:0xcb48 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xcb5c "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcb98 name="img" attributes=[#<Nokogiri::XML::Attr:0xcb70 name="src" value="https://rocketleague.media.zestyio.com/RL-Rocketpass-Keyart-4k-N3oLogos454353.e84a9f5c1e622635a7576cba638d36f5.SkgRUruPY5.jpg">, #<Nokogiri::XML::Attr:0xcb84 name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xcbac "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcc74 name="div" attributes=[#<Nokogiri::XML::Attr:0xcbc0 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xcbd4 "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcc4c name="div" attributes=[#<Nokogiri::XML::Attr:0xcbe8 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xcbfc "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcc24 name="h3" children=[#<Nokogiri::XML::Text:0xcc10 "\n\t\t\t\t\t\t\t\t\t\tPatch Notes: Season 7 Live\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcc38 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcc60 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcc88 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xccb0 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xccd8 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcd00 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xcd28 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xcfbc name="div" attributes=[#<Nokogiri::XML::Attr:0xcd3c name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xcd50 name="data-index" value="21">, #<Nokogiri::XML::Attr:0xcd64 name="data-id" value="7-ae8d81eaeb-m8b1vb">] children=[#<Nokogiri::XML::Text:0xcd78 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xcf94 name="a" attributes=[#<Nokogiri::XML::Attr:0xcd8c name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xcda0 name="href" value="/news/patch-notes-v2-16-season-7-update/">] children=[#<Nokogiri::XML::Text:0xcdb4 "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcf6c name="div" attributes=[#<Nokogiri::XML::Attr:0xcdc8 name="class" value="news-tile patch-notes skip12">] children=[#<Nokogiri::XML::Text:0xcddc "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcf44 name="div" attributes=[#<Nokogiri::XML::Attr:0xcdf0 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xce04 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xce40 name="img" attributes=[#<Nokogiri::XML::Attr:0xce18 name="src" value="https://rocketleague.media.zestyio.com/rl_s7_key_art_16_9_4k_no-logos.S1uJPYtvq.e84a9f5c1e622635a7576cba638d36f5.Skg6UFIF9.jpg">, #<Nokogiri::XML::Attr:0xce2c name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xce54 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcf1c name="div" attributes=[#<Nokogiri::XML::Attr:0xce68 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xce7c "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcef4 name="div" attributes=[#<Nokogiri::XML::Attr:0xce90 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xcea4 "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xcecc name="h3" children=[#<Nokogiri::XML::Text:0xceb8 "\n\t\t\t\t\t\t\t\t\t\tPatch Notes v2.16: Season 7 Update\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcee0 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcf08 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcf30 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcf58 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcf80 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xcfa8 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xcfd0 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xd264 name="div" attributes=[#<Nokogiri::XML::Attr:0xcfe4 name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xcff8 name="data-index" value="22">, #<Nokogiri::XML::Attr:0xd00c name="data-id" value="7-8ed48eeba5-p1l7df">] children=[#<Nokogiri::XML::Text:0xd020 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xd23c name="a" attributes=[#<Nokogiri::XML::Attr:0xd034 name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xd048 name="href" value="/news/pride-month-ignites-with-the-free-shine-through-bundle/">] children=[#<Nokogiri::XML::Text:0xd05c "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd214 name="div" attributes=[#<Nokogiri::XML::Attr:0xd070 name="class" value="news-tile announcements skip12">] children=[#<Nokogiri::XML::Text:0xd084 "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd1ec name="div" attributes=[#<Nokogiri::XML::Attr:0xd098 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xd0ac "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd0e8 name="img" attributes=[#<Nokogiri::XML::Attr:0xd0c0 name="src" value="https://rocketleague.media.zestyio.com/884a3c0d-d6ca-4a17-b612-ec5cb0e63ce3.e84a9f5c1e622635a7576cba638d36f5.Bkx0QR4LKc.jpg">, #<Nokogiri::XML::Attr:0xd0d4 name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xd0fc "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd1c4 name="div" attributes=[#<Nokogiri::XML::Attr:0xd110 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xd124 "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd19c name="div" attributes=[#<Nokogiri::XML::Attr:0xd138 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xd14c "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd174 name="h3" children=[#<Nokogiri::XML::Text:0xd160 "\n\t\t\t\t\t\t\t\t\t\tPride Month Ignites With The Free Shine Through Bundle\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd188 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd1b0 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd1d8 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd200 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd228 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd250 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xd278 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xd50c name="div" attributes=[#<Nokogiri::XML::Attr:0xd28c name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xd2a0 name="data-index" value="23">, #<Nokogiri::XML::Attr:0xd2b4 name="data-id" value="7-eaa79b8c9a-kf57nw">] children=[#<Nokogiri::XML::Text:0xd2c8 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xd4e4 name="a" attributes=[#<Nokogiri::XML::Attr:0xd2dc name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xd2f0 name="href" value="/news/season-7-changes-coming-to-custom-training/">] children=[#<Nokogiri::XML::Text:0xd304 "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd4bc name="div" attributes=[#<Nokogiri::XML::Attr:0xd318 name="class" value="news-tile announcements skip12">] children=[#<Nokogiri::XML::Text:0xd32c "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd494 name="div" attributes=[#<Nokogiri::XML::Attr:0xd340 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xd354 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd390 name="img" attributes=[#<Nokogiri::XML::Attr:0xd368 name="src" value="https://rocketleague.media.zestyio.com/rl_s2_rp_ProScreen2.e84a9f5c1e622635a7576cba638d36f5.jpg">, #<Nokogiri::XML::Attr:0xd37c name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xd3a4 "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd46c name="div" attributes=[#<Nokogiri::XML::Attr:0xd3b8 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xd3cc "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd444 name="div" attributes=[#<Nokogiri::XML::Attr:0xd3e0 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xd3f4 "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd41c name="h3" children=[#<Nokogiri::XML::Text:0xd408 "\n\t\t\t\t\t\t\t\t\t\tSeason 7: Changes Coming to Custom Training\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd430 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd458 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd480 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd4a8 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd4d0 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd4f8 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xd520 "\n\t\t\t\n\t\t\t">, #<Nokogiri::XML::Element:0xd7b4 name="div" attributes=[#<Nokogiri::XML::Attr:0xd534 name="class" value="tile small-12 medium-6 large-4 columns animated fadeInUpBig">, #<Nokogiri::XML::Attr:0xd548 name="data-index" value="24">, #<Nokogiri::XML::Attr:0xd55c name="data-id" value="7-86f2ba9b91-32cw43">] children=[#<Nokogiri::XML::Text:0xd570 "\n\t\t\t\t">, #<Nokogiri::XML::Element:0xd78c name="a" attributes=[#<Nokogiri::XML::Attr:0xd584 name="class" value="news-tile-wrap">, #<Nokogiri::XML::Attr:0xd598 name="href" value="/news/you-re-invited-to-the-season-7-premiere/">] children=[#<Nokogiri::XML::Text:0xd5ac "\n\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd764 name="div" attributes=[#<Nokogiri::XML::Attr:0xd5c0 name="class" value="news-tile announcements skip12">] children=[#<Nokogiri::XML::Text:0xd5d4 "\n\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd73c name="div" attributes=[#<Nokogiri::XML::Attr:0xd5e8 name="class" value="news-tile-inner">] children=[#<Nokogiri::XML::Text:0xd5fc "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd638 name="img" attributes=[#<Nokogiri::XML::Attr:0xd610 name="src" value="https://rocketleague.media.zestyio.com/season7.e84a9f5c1e622635a7576cba638d36f5.jpg">, #<Nokogiri::XML::Attr:0xd624 name="alt" value="article-image">]>, #<Nokogiri::XML::Text:0xd64c "\n\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd714 name="div" attributes=[#<Nokogiri::XML::Attr:0xd660 name="class" value="label-wrap">] children=[#<Nokogiri::XML::Text:0xd674 "\n\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd6ec name="div" attributes=[#<Nokogiri::XML::Attr:0xd688 name="class" value="label-wrap-inner text-center">] children=[#<Nokogiri::XML::Text:0xd69c "\n\t\t\t\t\t\t\t\t\t">, #<Nokogiri::XML::Element:0xd6c4 name="h3" children=[#<Nokogiri::XML::Text:0xd6b0 "\n\t\t\t\t\t\t\t\t\t\tYou’re Invited To The Season 7 Premiere!\n\t\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd6d8 "\n\t\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd700 "\t\n\t\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd728 "\t\n\t\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd750 "\t\n\t\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd778 "\t\n\t\t\t\t">]>, #<Nokogiri::XML::Text:0xd7a0 "\n\t\t\t">]>, #<Nokogiri::XML::Text:0xd7c8 "\n\t\t\t\n\n\n">, #<Nokogiri::XML::Element:0xd7f0 name="script" children=[#<Nokogiri::XML::CDATA:0xd7dc "\n    var titleheights = [];\n    var uniquetitleheights = [];\n    $('.f2p-news .news-archive .news-tile.skip12').each(function(i, obj) {\n\t\tvar cleantitle = $(this).find('h3').text();\n\t\t$(this).find('h3').text(cleantitle);\n        titleheights.push($(this).find('h3').height());\n    });\n    $.each(titleheights, function(i, el){\n        if($.inArray(el, uniquetitleheights) === -1) uniquetitleheights.push(el);\n    });\n    var maxtitleheight = Math.max.apply(Math,uniquetitleheights);\n    $('.f2p-news .news-archive .news-tile.skip12').each(function(i, obj) {\n        if($(this).find('h3').height() != maxtitleheight) {\n            $(this).find('h3').addClass('single');\n        }\n    });\n\n\t$('.f2p-news .news-archive .grid-container .grid-x .tile .news-tile-wrap .news-tile').tilt({\n\t\tmaxTilt:        1.5,\n\t\tperspective:    500,   // Transform perspective, the lower the more extreme the tilt gets.\n\t\teasing:         \"cubic-bezier(.03,.98,.52,.99)\",    // Easing on enter/exit.\n\t\tscale:          0.975,      // 2 = 200%, 1.5 = 150%, etc..\n\t\tspeed:          300,    // Speed of the enter/exit transition.\n\t\ttransition:     true,   // Set a transition on enter/exit.\n\t\tdisableAxis:    null,   // What axis should be disabled. Can be X or Y.\n\t\treset:          true,   // If the tilt effect has to be reset on exit.\n\t\tglare:          true,  // Enables glare effect\n\t\tmaxGlare:       0.25       // From 0 - 1.\n\t});\n">]>]>]>]>):
+    14: <!--  </div>-->
+    15: <!--</div>-->
+    16: <div>
+    17:   <% @parsed_data.body %>
+    18: </div>
+  
+app/views/application/show_news.html.erb:17
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:41:19 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.4ms | Allocations: 158)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 5.7ms | Allocations: 1312)
+  Rendered devise/shared/_footer.erb (Duration: 0.4ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 12450)
+Completed 200 OK in 677ms (Views: 16.5ms | ActiveRecord: 0.9ms | Allocations: 22912)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:42:48 +0500
+Processing by ApplicationController#show_news as HTML
+Started GET "/" for 127.0.0.1 at 2022-09-22 16:43:12 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 23.3ms | Allocations: 22061)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 104482)
+Completed 200 OK in 77ms (Views: 57.3ms | ActiveRecord: 15.4ms | Allocations: 109935)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:43:14 +0500
+Processing by ApplicationController#show_news as HTML
+Started GET "/" for 127.0.0.1 at 2022-09-22 16:43:51 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 8.9ms | Allocations: 1058)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 10837)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 2.8ms | Allocations: 11151)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 16:43:52 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 3.2ms | Allocations: 1057)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 10854)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.8ms | Allocations: 11167)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-22 16:43:53 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 3.2ms | Allocations: 1057)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 10840)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.5ms | Allocations: 11153)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:43:54 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.7ms | Allocations: 156)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 3.0ms | Allocations: 1078)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 11381)
+Completed 200 OK in 866ms (Views: 45.0ms | ActiveRecord: 0.6ms | Allocations: 21895)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:43:56 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 3.9ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 10810)
+Completed 200 OK in 2641ms (Views: 20.8ms | ActiveRecord: 0.8ms | Allocations: 20605)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 3.2ms | Allocations: 1056)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 10835)
+Completed 200 OK in 54030ms (Views: 20.7ms | ActiveRecord: 0.4ms | Allocations: 107997)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:44:11 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 4.2ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 10864)
+Completed 200 OK in 1981ms (Views: 22.4ms | ActiveRecord: 0.4ms | Allocations: 20623)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:45:51 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 17.1ms | Allocations: 4828)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 14928)
+Completed 200 OK in 879ms (Views: 30.2ms | ActiveRecord: 8.3ms | Allocations: 23058)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:46:43 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 32.0ms | Allocations: 4779)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 15035)
+Completed 200 OK in 656ms (Views: 38.1ms | ActiveRecord: 19.4ms | Allocations: 17851)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:50:49 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 15.5ms | Allocations: 4760)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 14658)
+Completed 200 OK in 1001ms (Views: 29.2ms | ActiveRecord: 4.5ms | Allocations: 17477)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:51:05 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 9.5ms | Allocations: 4761)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 14719)
+Completed 200 OK in 503ms (Views: 10.5ms | ActiveRecord: 5.9ms | Allocations: 17501)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 16:57:10 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.3ms | Allocations: 9)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 67.3ms | Allocations: 7277)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 88.9ms | Allocations: 17375)
+Completed 200 OK in 1948ms (Views: 105.0ms | ActiveRecord: 13.3ms | Allocations: 20130)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:00:52 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 27.9ms | Allocations: 4842)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 15096)
+Completed 200 OK in 1652ms (Views: 35.6ms | ActiveRecord: 16.1ms | Allocations: 18057)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:01:43 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 16.8ms | Allocations: 4759)
+  Rendered devise/shared/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 14649)
+Completed 200 OK in 751ms (Views: 36.1ms | ActiveRecord: 6.8ms | Allocations: 17656)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:02:27 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 19.4ms | Allocations: 4760)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 14704)
+Completed 200 OK in 719ms (Views: 31.9ms | ActiveRecord: 9.3ms | Allocations: 17675)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:04:06 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.4ms | Allocations: 9)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 24.8ms | Allocations: 4779)
+  Rendered devise/shared/_footer.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.6ms | Allocations: 15037)
+Completed 200 OK in 933ms (Views: 61.6ms | ActiveRecord: 7.1ms | Allocations: 18056)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:05:03 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.2ms | Allocations: 9)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 22.8ms | Allocations: 4764)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 15018)
+Completed 200 OK in 896ms (Views: 40.3ms | ActiveRecord: 8.3ms | Allocations: 18037)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:05:20 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 19.6ms | Allocations: 4759)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 14643)
+Completed 200 OK in 537ms (Views: 14.5ms | ActiveRecord: 14.5ms | Allocations: 17656)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:07:11 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.6ms | Allocations: 317)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 23.9ms | Allocations: 5043)
+  Rendered devise/shared/_footer.erb (Duration: 1.0ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 16331)
+Completed 200 OK in 705ms (Views: 38.8ms | ActiveRecord: 13.8ms | Allocations: 19491)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:07:50 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.6ms | Allocations: 292)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 4.6ms | Allocations: 1303)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 12473)
+Completed 200 OK in 491ms (Views: 26.3ms | ActiveRecord: 0.5ms | Allocations: 15613)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:08:10 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 10.4ms | Allocations: 8159)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 8231)
+Completed 500 Internal Server Error in 471ms (ActiveRecord: 0.0ms | Allocations: 11315)
+
+
+  
+ActionView::Template::Error (undefined method `img' for {:img=>"https://rocketleague.media.zestyio.com/202412177_4212002178860352_1193473175117044017_n.e84a9f5c1e622635a7576cba638d36f5.jpg", :link=>"https://www.rocketleague.com//news/announcing-season-6-rewards/", :title=>"Announcing Season 6 Rewards"}:Hash):
+    14: <!--  </div>-->
+    15: <!--</div>-->
+    16: <% @news.each do |article| %>
+    17:   <%= article.img %>
+    18:   <%= article.src %>
+    19:   <%= article.title %>
+    20: 
+  
+app/views/application/show_news.html.erb:17
+app/views/application/show_news.html.erb:16:in `each'
+app/views/application/show_news.html.erb:16
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:08:24 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2232)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2304)
+Completed 500 Internal Server Error in 691ms (ActiveRecord: 0.0ms | Allocations: 5406)
+
+
+  
+ActionView::Template::Error (undefined method `img' for {:img=>"https://rocketleague.media.zestyio.com/202412177_4212002178860352_1193473175117044017_n.e84a9f5c1e622635a7576cba638d36f5.jpg", :link=>"https://www.rocketleague.com//news/announcing-season-6-rewards/", :title=>"Announcing Season 6 Rewards"}:Hash):
+    14: <!--  </div>-->
+    15: <!--</div>-->
+    16: <% @news.each do |article| %>
+    17:   <%= article.img %>
+    18:   <%= article.link %>
+    19:   <%= article.title %>
+    20: 
+  
+app/views/application/show_news.html.erb:17
+app/views/application/show_news.html.erb:16:in `each'
+app/views/application/show_news.html.erb:16
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:08:25 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2019)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2090)
+Completed 500 Internal Server Error in 472ms (ActiveRecord: 0.0ms | Allocations: 4529)
+
+
+  
+ActionView::Template::Error (undefined method `img' for {:img=>"https://rocketleague.media.zestyio.com/202412177_4212002178860352_1193473175117044017_n.e84a9f5c1e622635a7576cba638d36f5.jpg", :link=>"https://www.rocketleague.com//news/announcing-season-6-rewards/", :title=>"Announcing Season 6 Rewards"}:Hash):
+    14: <!--  </div>-->
+    15: <!--</div>-->
+    16: <% @news.each do |article| %>
+    17:   <%= article.img %>
+    18:   <%= article.link %>
+    19:   <%= article.title %>
+    20: 
+  
+app/views/application/show_news.html.erb:17
+app/views/application/show_news.html.erb:16:in `each'
+app/views/application/show_news.html.erb:16
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:08:47 +0500
+Processing by ApplicationController#show_news as HTML
+Started GET "/" for 127.0.0.1 at 2022-09-22 17:09:12 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 29.2ms | Allocations: 22061)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 82.2ms | Allocations: 104495)
+Completed 200 OK in 89ms (Views: 70.3ms | ActiveRecord: 14.0ms | Allocations: 109948)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:09:15 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.4ms | Allocations: 286)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 4.5ms | Allocations: 1090)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 11209)
+Completed 200 OK in 1560ms (Views: 23.8ms | ActiveRecord: 0.7ms | Allocations: 14541)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:10:21 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.3ms | Allocations: 297)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 8.4ms | Allocations: 1314)
+  Rendered devise/shared/_footer.erb (Duration: 0.8ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 12177)
+Completed 200 OK in 803ms (Views: 37.5ms | ActiveRecord: 2.1ms | Allocations: 15288)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:10:58 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 2.5ms | Allocations: 296)
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 13.4ms | Allocations: 1314)
+  Rendered devise/shared/_footer.erb (Duration: 0.9ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 12184)
+Completed 200 OK in 1677ms (Views: 42.3ms | ActiveRecord: 6.9ms | Allocations: 15293)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:11:51 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.8ms | Allocations: 289)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 3.1ms | Allocations: 1314)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 12583)
+Completed 200 OK in 692ms (Views: 21.1ms | ActiveRecord: 0.6ms | Allocations: 15692)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:12:30 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 3.2ms | Allocations: 285)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 10.8ms | Allocations: 1303)
+  Rendered devise/shared/_footer.erb (Duration: 1.0ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 12143)
+Completed 200 OK in 689ms (Views: 36.0ms | ActiveRecord: 0.6ms | Allocations: 15247)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:12:31 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 4.7ms | Allocations: 1046)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 10903)
+Completed 200 OK in 484ms (Views: 28.8ms | ActiveRecord: 0.4ms | Allocations: 13344)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:13:15 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 0.7ms | Allocations: 287)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 4.4ms | Allocations: 1303)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 12189)
+Completed 200 OK in 716ms (Views: 25.3ms | ActiveRecord: 0.8ms | Allocations: 15291)
+
+
+Started GET "/news" for 127.0.0.1 at 2022-09-22 17:13:55 +0500
+Processing by ApplicationController#show_news as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/show_news.html.erb within layouts/application
+  Rendered application/show_news.html.erb within layouts/application (Duration: 1.3ms | Allocations: 287)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 7.9ms | Allocations: 1303)
+  Rendered devise/shared/_footer.erb (Duration: 1.0ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 12167)
+Completed 200 OK in 848ms (Views: 41.0ms | ActiveRecord: 0.6ms | Allocations: 15273)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-22 17:14:48 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (6.6ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 18303)
+  Rendered devise/shared/_navbar.erb (Duration: 0.1ms | Allocations: 285)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 28561)
+Completed 200 OK in 57ms (Views: 26.3ms | ActiveRecord: 15.1ms | Allocations: 31537)
+
+
