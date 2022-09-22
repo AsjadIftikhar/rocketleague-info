@@ -74,4 +74,5 @@ end
 gem 'devise'
 gem 'cancancan'
 gem 'activeadmin'
+gem "font-awesome-sass", "~> 6.2.0"
 gem "tailwindcss-rails", "~> 2.0"
