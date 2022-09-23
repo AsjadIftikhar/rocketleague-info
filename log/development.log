@@ -22951,3 +22951,1033 @@ Processing by Admin::MatchesController#index as HTML
 Completed 200 OK in 67ms (Views: 61.0ms | ActiveRecord: 1.3ms | Allocations: 37706)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUserFollowMatches (20220923063410)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE "user_follow_matches" ("id" bigserial primary key, "time_before_notification" time, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220923063410"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-09-23 11:39:36 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 386)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 14.4ms | Allocations: 22064)
+  Rendered devise/shared/_footer.erb (Duration: 1.4ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 104643)
+Completed 200 OK in 69ms (Views: 59.0ms | ActiveRecord: 6.1ms | Allocations: 110138)
+
+
+Started GET "/admin" for 127.0.0.1 at 2022-09-23 11:39:40 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.7ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb (Duration: 23.2ms | Allocations: 19926)
+Completed 200 OK in 49ms (Views: 26.0ms | ActiveRecord: 8.9ms | Allocations: 25494)
+
+
+Started GET "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 11:39:42 +0500
+Processing by Admin::UserFollowMatchesController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUserFollowMatch Load (1.2ms)[0m  [1m[34mSELECT "user_follow_matches".* FROM "user_follow_matches" ORDER BY "user_follow_matches"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (0.8ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 55.5ms | Allocations: 50057)
+Completed 200 OK in 74ms (Views: 52.1ms | ActiveRecord: 12.0ms | Allocations: 54043)
+
+
+Started GET "/admin/user_follow_matches/new" for 127.0.0.1 at 2022-09-23 11:39:45 +0500
+Processing by Admin::UserFollowMatchesController#new as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.7ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 28.6ms | Allocations: 25184)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.1ms | Allocations: 39748)
+
+
+  
+ActionView::Template::Error (undefined method `match_id' for #<UserFollowMatch id: nil, time_before_notification: nil, created_at: nil, updated_at: nil>
+Did you mean?  match):
+    1: # frozen_string_literal: true
+    2: insert_tag renderer_for(:new)
+  
+activemodel (7.0.4) lib/active_model/attribute_methods.rb:458:in `method_missing'
+ransack (3.2.1) lib/ransack/helpers/form_builder.rb:14:in `value'
+actionview (7.0.4) lib/action_view/helpers/tags/select.rb:18:in `block in render'
+actionview (7.0.4) lib/action_view/helpers/tags/select.rb:18:in `fetch'
+actionview (7.0.4) lib/action_view/helpers/tags/select.rb:18:in `render'
+actionview (7.0.4) lib/action_view/helpers/form_options_helper.rb:159:in `select'
+actionview (7.0.4) lib/action_view/helpers/form_options_helper.rb:846:in `select'
+formtastic (4.0.0) lib/formtastic/inputs/select_input.rb:173:in `select_html'
+formtastic (4.0.0) lib/formtastic/inputs/select_input.rb:168:in `block in to_html'
+actionview (7.0.4) lib/action_view/helpers/capture_helper.rb:45:in `block in capture'
+actionview (7.0.4) lib/action_view/helpers/capture_helper.rb:209:in `with_output_buffer'
+actionview (7.0.4) lib/action_view/helpers/capture_helper.rb:45:in `capture'
+formtastic (4.0.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+activeadmin (2.13.1) lib/active_admin/form_builder.rb:7:in `input_wrapping'
+formtastic (4.0.0) lib/formtastic/inputs/select_input.rb:166:in `to_html'
+formtastic (4.0.0) lib/formtastic/helpers/input_helper.rb:239:in `input'
+formtastic (4.0.0) lib/formtastic/helpers/inputs_helper.rb:330:in `block in fieldset_contents_from_column_list'
+formtastic (4.0.0) lib/formtastic/helpers/inputs_helper.rb:318:in `collect'
+formtastic (4.0.0) lib/formtastic/helpers/inputs_helper.rb:318:in `fieldset_contents_from_column_list'
+formtastic (4.0.0) lib/formtastic/helpers/inputs_helper.rb:297:in `inputs'
+arbre (1.5.0) lib/arbre/rails/forms.rb:31:in `proxy_call_to_form'
+activeadmin (2.13.1) lib/active_admin/views/components/active_admin_form.rb:67:in `inputs'
+activeadmin (2.13.1) lib/active_admin/views/pages/form.rb:46:in `block in default_form_config'
+activeadmin (2.13.1) lib/active_admin/views/components/active_admin_form.rb:36:in `instance_eval'
+activeadmin (2.13.1) lib/active_admin/views/components/active_admin_form.rb:36:in `build'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:29:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `active_admin_form_for'
+activeadmin (2.13.1) lib/active_admin/views/pages/form.rb:26:in `main_content'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:104:in `block (2 levels) in build_main_content_wrapper'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:32:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `div'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:103:in `block in build_main_content_wrapper'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:32:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `div'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:102:in `build_main_content_wrapper'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:86:in `block in build_page_content'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:32:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `div'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:85:in `build_page_content'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:62:in `block (2 levels) in build_page'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:32:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `div'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:58:in `block in build_page'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:57:in `build_page'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:10:in `build'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+activeadmin (2.13.1) app/views/active_admin/resource/new.html.arb:3
+arbre (1.5.0) lib/arbre/context.rb:47:in `instance_eval'
+arbre (1.5.0) lib/arbre/context.rb:47:in `initialize'
+activeadmin (2.13.1) app/views/active_admin/resource/new.html.arb:1:in `new'
+activeadmin (2.13.1) app/views/active_admin/resource/new.html.arb:1
+actionview (7.0.4) lib/action_view/base.rb:244:in `public_send'
+actionview (7.0.4) lib/action_view/base.rb:244:in `_run'
+actionview (7.0.4) lib/action_view/template.rb:157:in `block in render'
+activesupport (7.0.4) lib/active_support/notifications.rb:208:in `instrument'
+actionview (7.0.4) lib/action_view/template.rb:361:in `instrument_render_template'
+actionview (7.0.4) lib/action_view/template.rb:155:in `render'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:65:in `block (2 levels) in render_template'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:60:in `block in render_template'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:79:in `render_with_layout'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:59:in `render_template'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (7.0.4) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (7.0.4) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (7.0.4) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (7.0.4) lib/action_view/base.rb:270:in `in_rendering_context'
+actionview (7.0.4) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (7.0.4) lib/action_controller/metal/streaming.rb:216:in `_render_template'
+actionview (7.0.4) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:46:in `render_to_body'
+actionpack (7.0.4) lib/action_controller/metal/renderers.rb:141:in `render_to_body'
+actionpack (7.0.4) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:30:in `render'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:22:in `block (2 levels) in render'
+/Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/benchmark.rb:308:in `realtime'
+activesupport (7.0.4) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:22:in `block in render'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:91:in `cleanup_view_runtime'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:34:in `cleanup_view_runtime'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:21:in `render'
+responders (3.0.1) lib/action_controller/responder.rb:240:in `default_render'
+responders (3.0.1) lib/action_controller/responder.rb:172:in `to_html'
+responders (3.0.1) lib/responders/flash_responder.rb:109:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+inherited_resources (1.13.1) lib/inherited_resources/actions.rb:19:in `new'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/admin/user_follow_matches/new" for 127.0.0.1 at 2022-09-23 11:40:02 +0500
+Processing by Admin::UserFollowMatchesController#new as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.6ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 31.3ms | Allocations: 24162)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.2ms | Allocations: 25787)
+
+
+  
+ActionView::Template::Error (undefined method `match_id' for #<UserFollowMatch id: nil, time_before_notification: nil, created_at: nil, updated_at: nil>
+Did you mean?  match):
+    1: # frozen_string_literal: true
+    2: insert_tag renderer_for(:new)
+  
+activemodel (7.0.4) lib/active_model/attribute_methods.rb:458:in `method_missing'
+ransack (3.2.1) lib/ransack/helpers/form_builder.rb:14:in `value'
+actionview (7.0.4) lib/action_view/helpers/tags/select.rb:18:in `block in render'
+actionview (7.0.4) lib/action_view/helpers/tags/select.rb:18:in `fetch'
+actionview (7.0.4) lib/action_view/helpers/tags/select.rb:18:in `render'
+actionview (7.0.4) lib/action_view/helpers/form_options_helper.rb:159:in `select'
+actionview (7.0.4) lib/action_view/helpers/form_options_helper.rb:846:in `select'
+formtastic (4.0.0) lib/formtastic/inputs/select_input.rb:173:in `select_html'
+formtastic (4.0.0) lib/formtastic/inputs/select_input.rb:168:in `block in to_html'
+actionview (7.0.4) lib/action_view/helpers/capture_helper.rb:45:in `block in capture'
+actionview (7.0.4) lib/action_view/helpers/capture_helper.rb:209:in `with_output_buffer'
+actionview (7.0.4) lib/action_view/helpers/capture_helper.rb:45:in `capture'
+formtastic (4.0.0) lib/formtastic/inputs/base/wrapping.rb:11:in `input_wrapping'
+activeadmin (2.13.1) lib/active_admin/form_builder.rb:7:in `input_wrapping'
+formtastic (4.0.0) lib/formtastic/inputs/select_input.rb:166:in `to_html'
+formtastic (4.0.0) lib/formtastic/helpers/input_helper.rb:239:in `input'
+formtastic (4.0.0) lib/formtastic/helpers/inputs_helper.rb:330:in `block in fieldset_contents_from_column_list'
+formtastic (4.0.0) lib/formtastic/helpers/inputs_helper.rb:318:in `collect'
+formtastic (4.0.0) lib/formtastic/helpers/inputs_helper.rb:318:in `fieldset_contents_from_column_list'
+formtastic (4.0.0) lib/formtastic/helpers/inputs_helper.rb:297:in `inputs'
+arbre (1.5.0) lib/arbre/rails/forms.rb:31:in `proxy_call_to_form'
+activeadmin (2.13.1) lib/active_admin/views/components/active_admin_form.rb:67:in `inputs'
+activeadmin (2.13.1) lib/active_admin/views/pages/form.rb:46:in `block in default_form_config'
+activeadmin (2.13.1) lib/active_admin/views/components/active_admin_form.rb:36:in `instance_eval'
+activeadmin (2.13.1) lib/active_admin/views/components/active_admin_form.rb:36:in `build'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:29:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `active_admin_form_for'
+activeadmin (2.13.1) lib/active_admin/views/pages/form.rb:26:in `main_content'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:104:in `block (2 levels) in build_main_content_wrapper'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:32:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `div'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:103:in `block in build_main_content_wrapper'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:32:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `div'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:102:in `build_main_content_wrapper'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:86:in `block in build_page_content'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:32:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `div'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:85:in `build_page_content'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:62:in `block (2 levels) in build_page'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:32:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:15:in `div'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:58:in `block in build_page'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:50:in `with_current_arbre_element'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:57:in `build_page'
+activeadmin (2.13.1) lib/active_admin/views/pages/base.rb:10:in `build'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+arbre (1.5.0) lib/arbre/context.rb:94:in `with_current_arbre_element'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:27:in `build_tag'
+arbre (1.5.0) lib/arbre/element/builder_methods.rb:40:in `insert_tag'
+activeadmin (2.13.1) app/views/active_admin/resource/new.html.arb:3
+arbre (1.5.0) lib/arbre/context.rb:47:in `instance_eval'
+arbre (1.5.0) lib/arbre/context.rb:47:in `initialize'
+activeadmin (2.13.1) app/views/active_admin/resource/new.html.arb:1:in `new'
+activeadmin (2.13.1) app/views/active_admin/resource/new.html.arb:1
+actionview (7.0.4) lib/action_view/base.rb:244:in `public_send'
+actionview (7.0.4) lib/action_view/base.rb:244:in `_run'
+actionview (7.0.4) lib/action_view/template.rb:157:in `block in render'
+activesupport (7.0.4) lib/active_support/notifications.rb:208:in `instrument'
+actionview (7.0.4) lib/action_view/template.rb:361:in `instrument_render_template'
+actionview (7.0.4) lib/action_view/template.rb:155:in `render'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:65:in `block (2 levels) in render_template'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:60:in `block in render_template'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:79:in `render_with_layout'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:59:in `render_template'
+actionview (7.0.4) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (7.0.4) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (7.0.4) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (7.0.4) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (7.0.4) lib/action_view/base.rb:270:in `in_rendering_context'
+actionview (7.0.4) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (7.0.4) lib/action_controller/metal/streaming.rb:216:in `_render_template'
+actionview (7.0.4) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:46:in `render_to_body'
+actionpack (7.0.4) lib/action_controller/metal/renderers.rb:141:in `render_to_body'
+actionpack (7.0.4) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:30:in `render'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:22:in `block (2 levels) in render'
+/Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0/benchmark.rb:308:in `realtime'
+activesupport (7.0.4) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:22:in `block in render'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:91:in `cleanup_view_runtime'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:34:in `cleanup_view_runtime'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:21:in `render'
+responders (3.0.1) lib/action_controller/responder.rb:240:in `default_render'
+responders (3.0.1) lib/action_controller/responder.rb:172:in `to_html'
+responders (3.0.1) lib/responders/flash_responder.rb:109:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+inherited_resources (1.13.1) lib/inherited_resources/actions.rb:19:in `new'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUserFollowMatches (20220923063410)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.2ms)[0m  [1m[35mDROP TABLE "user_follow_matches"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20220923063410"]]
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUserFollowMatches (20220923063410)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE "user_follow_matches" ("id" bigserial primary key, "time_before_notification" time, "match_id" bigint NOT NULL, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ef9d76faba"
+FOREIGN KEY ("match_id")
+  REFERENCES "matches" ("id")
+, CONSTRAINT "fk_rails_1f0d25203a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE INDEX "index_user_follow_matches_on_match_id" ON "user_follow_matches" ("match_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_user_follow_matches_on_user_id" ON "user_follow_matches" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220923063410"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-09-23 11:59:37 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 386)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 16.3ms | Allocations: 22068)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 65.0ms | Allocations: 104426)
+Completed 200 OK in 71ms (Views: 58.7ms | ActiveRecord: 8.4ms | Allocations: 109921)
+
+
+Started GET "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 11:59:41 +0500
+Processing by Admin::UserFollowMatchesController#index as HTML
+  [1m[36mAdminUser Load (1.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUserFollowMatch Load (1.7ms)[0m  [1m[34mSELECT "user_follow_matches".* FROM "user_follow_matches" ORDER BY "user_follow_matches"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (1.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 65.1ms | Allocations: 51424)
+Completed 200 OK in 106ms (Views: 56.7ms | ActiveRecord: 28.3ms | Allocations: 58938)
+
+
+Started GET "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 11:59:42 +0500
+Processing by Admin::UserFollowMatchesController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUserFollowMatch Load (0.4ms)[0m  [1m[34mSELECT "user_follow_matches".* FROM "user_follow_matches" ORDER BY "user_follow_matches"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 32.1ms | Allocations: 30476)
+Completed 200 OK in 40ms (Views: 31.8ms | ActiveRecord: 1.5ms | Allocations: 32309)
+
+
+Started GET "/admin/user_follow_matches/new" for 127.0.0.1 at 2022-09-23 11:59:44 +0500
+Processing by Admin::UserFollowMatchesController#new as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 37.0ms | Allocations: 36080)
+Completed 200 OK in 53ms (Views: 37.5ms | ActiveRecord: 1.2ms | Allocations: 51579)
+
+
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 11:59:56 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"05"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms | Allocations: 1935)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+activemodel (7.0.4) lib/active_model/forbidden_attributes_protection.rb:23:in `sanitize_for_mass_assignment'
+activemodel (7.0.4) lib/active_model/attribute_assignment.rb:34:in `assign_attributes'
+activeadmin (2.13.1) lib/active_admin/resource_controller/data_access.rb:301:in `assign_attributes'
+activeadmin (2.13.1) lib/active_admin/resource_controller/data_access.rb:119:in `build_resource'
+inherited_resources (1.13.1) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:00:36 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"05"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 8.4ms | Allocations: 10721)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+activemodel (7.0.4) lib/active_model/forbidden_attributes_protection.rb:23:in `sanitize_for_mass_assignment'
+activemodel (7.0.4) lib/active_model/attribute_assignment.rb:34:in `assign_attributes'
+activeadmin (2.13.1) lib/active_admin/resource_controller/data_access.rb:301:in `assign_attributes'
+activeadmin (2.13.1) lib/active_admin/resource_controller/data_access.rb:119:in `build_resource'
+inherited_resources (1.13.1) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-09-23 12:00:48 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 386)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 109.6ms | Allocations: 22064)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 176.7ms | Allocations: 104420)
+Completed 200 OK in 185ms (Views: 78.5ms | ActiveRecord: 100.4ms | Allocations: 109915)
+
+
+Started GET "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:00:53 +0500
+Processing by Admin::UserFollowMatchesController#index as HTML
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUserFollowMatch Load (1.3ms)[0m  [1m[34mSELECT "user_follow_matches".* FROM "user_follow_matches" ORDER BY "user_follow_matches"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (0.6ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 57.3ms | Allocations: 51423)
+Completed 200 OK in 89ms (Views: 53.3ms | ActiveRecord: 16.1ms | Allocations: 58947)
+
+
+Started GET "/admin/user_follow_matches/new" for 127.0.0.1 at 2022-09-23 12:00:55 +0500
+Processing by Admin::UserFollowMatchesController#new as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.6ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 35.9ms | Allocations: 36261)
+Completed 200 OK in 52ms (Views: 36.1ms | ActiveRecord: 1.6ms | Allocations: 51753)
+
+
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:01:04 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"05"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 1943)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+activemodel (7.0.4) lib/active_model/forbidden_attributes_protection.rb:23:in `sanitize_for_mass_assignment'
+activemodel (7.0.4) lib/active_model/attribute_assignment.rb:34:in `assign_attributes'
+activeadmin (2.13.1) lib/active_admin/resource_controller/data_access.rb:301:in `assign_attributes'
+activeadmin (2.13.1) lib/active_admin/resource_controller/data_access.rb:119:in `build_resource'
+inherited_resources (1.13.1) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:01:29 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"05"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameters: :match_id, :user_id. Context: { controller: Admin::UserFollowMatchesController, action: create, request: #<ActionDispatch::Request:0x000000012d726e78>, params: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"05"}, "commit"=>"Create User follow match", "controller"=>"admin/user_follow_matches", "action"=>"create"} }[0m
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 26.3ms | Allocations: 42120)
+Completed 200 OK in 48ms (Views: 17.5ms | ActiveRecord: 19.6ms | Allocations: 56826)
+
+
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:01:34 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"05"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameters: :match_id, :user_id. Context: { controller: Admin::UserFollowMatchesController, action: create, request: #<ActionDispatch::Request:0x000000012ee1d7d0>, params: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"05"}, "commit"=>"Create User follow match", "controller"=>"admin/user_follow_matches", "action"=>"create"} }[0m
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.5ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 45.6ms | Allocations: 33463)
+Completed 200 OK in 54ms (Views: 45.1ms | ActiveRecord: 1.3ms | Allocations: 36897)
+
+
+Started GET "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:01:37 +0500
+Processing by Admin::UserFollowMatchesController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUserFollowMatch Load (0.9ms)[0m  [1m[34mSELECT "user_follow_matches".* FROM "user_follow_matches" ORDER BY "user_follow_matches"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 34.6ms | Allocations: 30657)
+Completed 200 OK in 44ms (Views: 34.1ms | ActiveRecord: 1.9ms | Allocations: 32935)
+
+
+Started GET "/admin/user_follow_matches/new" for 127.0.0.1 at 2022-09-23 12:01:38 +0500
+Processing by Admin::UserFollowMatchesController#new as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.6ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 29.7ms | Allocations: 30132)
+Completed 200 OK in 36ms (Views: 29.5ms | ActiveRecord: 1.3ms | Allocations: 31831)
+
+
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:01:49 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"01", "time_before_notification(5i)"=>"02"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameters: :match_id, :user_id. Context: { controller: Admin::UserFollowMatchesController, action: create, request: #<ActionDispatch::Request:0x000000011b1aaf88>, params: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"01", "time_before_notification(5i)"=>"02"}, "commit"=>"Create User follow match", "controller"=>"admin/user_follow_matches", "action"=>"create"} }[0m
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.7ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 44.7ms | Allocations: 33366)
+Completed 200 OK in 63ms (Views: 44.1ms | ActiveRecord: 1.6ms | Allocations: 36775)
+
+
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:02:18 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"01", "time_before_notification(5i)"=>"02"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameters: :match_id, :user_id. Context: { controller: Admin::UserFollowMatchesController, action: create, request: #<ActionDispatch::Request:0x000000014ae3ddc0>, params: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"2", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"01", "time_before_notification(5i)"=>"02"}, "commit"=>"Create User follow match", "controller"=>"admin/user_follow_matches", "action"=>"create"} }[0m
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.8ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 35.4ms | Allocations: 33613)
+Completed 200 OK in 58ms (Views: 34.7ms | ActiveRecord: 1.8ms | Allocations: 37021)
+
+
+Started GET "/admin/tournaments" for 127.0.0.1 at 2022-09-23 12:02:20 +0500
+Processing by Admin::TournamentsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mTournament Load (1.6ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments" ORDER BY "tournaments"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 59.9ms | Allocations: 68669)
+Completed 200 OK in 83ms (Views: 60.9ms | ActiveRecord: 10.1ms | Allocations: 72063)
+
+
+Started GET "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:02:23 +0500
+Processing by Admin::UserFollowMatchesController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUserFollowMatch Load (1.0ms)[0m  [1m[34mSELECT "user_follow_matches".* FROM "user_follow_matches" ORDER BY "user_follow_matches"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 35.4ms | Allocations: 30299)
+Completed 200 OK in 42ms (Views: 34.4ms | ActiveRecord: 2.0ms | Allocations: 32121)
+
+
+Started GET "/admin/user_follow_matches/new" for 127.0.0.1 at 2022-09-23 12:02:25 +0500
+Processing by Admin::UserFollowMatchesController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.7ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 30.0ms | Allocations: 30118)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 1.2ms | Allocations: 31817)
+
+
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:02:35 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"3", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"01"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[31mUnpermitted parameters: :match_id, :user_id. Context: { controller: Admin::UserFollowMatchesController, action: create, request: #<ActionDispatch::Request:0x000000012f4478b8>, params: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"3", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"01"}, "commit"=>"Create User follow match", "controller"=>"admin/user_follow_matches", "action"=>"create"} }[0m
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  [1m[36mMatch Load (0.7ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 52.6ms | Allocations: 33360)
+Completed 200 OK in 61ms (Views: 52.0ms | ActiveRecord: 1.4ms | Allocations: 36767)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-23 12:03:48 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 386)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 16.0ms | Allocations: 22064)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 83.6ms | Allocations: 104449)
+Completed 200 OK in 90ms (Views: 78.8ms | ActiveRecord: 6.7ms | Allocations: 109944)
+
+
+Started POST "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:03:55 +0500
+Processing by Admin::UserFollowMatchesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_follow_match"=>{"match_id"=>"1", "user_id"=>"3", "time_before_notification(1i)"=>"2022", "time_before_notification(2i)"=>"9", "time_before_notification(3i)"=>"23", "time_before_notification(4i)"=>"00", "time_before_notification(5i)"=>"01"}, "commit"=>"Create User follow match"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMatch Load (0.6ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUserFollowMatch Create (5.4ms)[0m  [1m[32mINSERT INTO "user_follow_matches" ("time_before_notification", "match_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["time_before_notification", "00:01:00"], ["match_id", 1], ["user_id", 3], ["created_at", "2022-09-23 07:03:55.664036"], ["updated_at", "2022-09-23 07:03:55.664036"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/user_follow_matches/1
+Completed 302 Found in 71ms (ActiveRecord: 22.7ms | Allocations: 47604)
+
+
+Started GET "/admin/user_follow_matches/1" for 127.0.0.1 at 2022-09-23 12:03:55 +0500
+Processing by Admin::UserFollowMatchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUserFollowMatch Load (0.4ms)[0m  [1m[34mSELECT "user_follow_matches".* FROM "user_follow_matches" WHERE "user_follow_matches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb
+  [1m[36mMatch Load (0.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActiveAdmin::Comment Count (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3[0m  [["resource_type", "UserFollowMatch"], ["resource_id", 1], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3 LIMIT $4 OFFSET $5[0m  [["resource_type", "UserFollowMatch"], ["resource_id", 1], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb (Duration: 40.7ms | Allocations: 56463)
+Completed 200 OK in 45ms (Views: 35.3ms | ActiveRecord: 7.1ms | Allocations: 59793)
+
+
+Started GET "/admin/user_follow_matches" for 127.0.0.1 at 2022-09-23 12:03:59 +0500
+Processing by Admin::UserFollowMatchesController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUserFollowMatch Load (0.9ms)[0m  [1m[34mSELECT "user_follow_matches".* FROM "user_follow_matches" ORDER BY "user_follow_matches"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (0.3ms)[0m  [1m[34mSELECT "matches".* FROM "matches" WHERE "matches"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMatch Load (0.4ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 47.4ms | Allocations: 44539)
+Completed 200 OK in 56ms (Views: 46.5ms | ActiveRecord: 2.7ms | Allocations: 47204)
+
+

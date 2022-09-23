@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_23_062421) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_23_063410) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -57,6 +57,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_23_062421) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "user_follow_matches", force: :cascade do |t|
+    t.time "time_before_notification"
+    t.bigint "match_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["match_id"], name: "index_user_follow_matches_on_match_id"
+    t.index ["user_id"], name: "index_user_follow_matches_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -74,4 +84,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_23_062421) do
   end
 
   add_foreign_key "matches", "tournaments"
+  add_foreign_key "user_follow_matches", "matches"
+  add_foreign_key "user_follow_matches", "users"
 end

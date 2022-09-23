@@ -1,0 +1,12 @@
+<div id="<%= dom_id user_follow_match %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Time before notification:</strong>
+    <%= user_follow_match.time_before_notification %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this user follow match", user_follow_match, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this user follow match', edit_user_follow_match_path(user_follow_match), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
