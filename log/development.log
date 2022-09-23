@@ -23981,3 +23981,238 @@ Processing by Admin::UserFollowMatchesController#index as HTML
 Completed 200 OK in 56ms (Views: 46.5ms | ActiveRecord: 2.7ms | Allocations: 47204)
 
 
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTeams (20220923070857)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.1ms)[0m  [1m[35mCREATE TABLE "teams" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220923070857"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2556108829251378135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-09-23 12:09:28 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 18.1ms | Allocations: 22066)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 70.5ms | Allocations: 104642)
+Completed 200 OK in 77ms (Views: 64.7ms | ActiveRecord: 7.9ms | Allocations: 110152)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2022-09-23 12:09:35 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (1.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb (Duration: 20.9ms | Allocations: 20445)
+Completed 200 OK in 39ms (Views: 23.0ms | ActiveRecord: 5.7ms | Allocations: 26039)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2022-09-23 12:09:36 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb (Duration: 15.4ms | Allocations: 19011)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 20553)
+
+
+Started GET "/admin/teams" for 127.0.0.1 at 2022-09-23 12:09:38 +0500
+Processing by Admin::TeamsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mTeam Load (1.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 33.9ms | Allocations: 30177)
+Completed 200 OK in 45ms (Views: 34.6ms | ActiveRecord: 4.4ms | Allocations: 34130)
+
+
+Started GET "/admin/teams/new" for 127.0.0.1 at 2022-09-23 12:09:40 +0500
+Processing by Admin::TeamsController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 12.0ms | Allocations: 25178)
+Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 39764)
+
+
+Started POST "/admin/teams" for 127.0.0.1 at 2022-09-23 12:09:48 +0500
+Processing by Admin::TeamsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"NRG"}, "commit"=>"Create Team"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 1918)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+activemodel (7.0.4) lib/active_model/forbidden_attributes_protection.rb:23:in `sanitize_for_mass_assignment'
+activemodel (7.0.4) lib/active_model/attribute_assignment.rb:34:in `assign_attributes'
+activeadmin (2.13.1) lib/active_admin/resource_controller/data_access.rb:301:in `assign_attributes'
+activeadmin (2.13.1) lib/active_admin/resource_controller/data_access.rb:119:in `build_resource'
+inherited_resources (1.13.1) lib/inherited_resources/actions.rb:31:in `create'
+actionpack (7.0.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/admin/teams" for 127.0.0.1 at 2022-09-23 12:09:57 +0500
+Processing by Admin::TeamsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"NRG"}, "commit"=>"Create Team"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTeam Create (1.5ms)[0m  [1m[32mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "NRG"], ["created_at", "2022-09-23 07:09:57.742139"], ["updated_at", "2022-09-23 07:09:57.742139"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/teams/1
+Completed 302 Found in 52ms (ActiveRecord: 10.8ms | Allocations: 15867)
+
+
+Started GET "/admin/teams/1" for 127.0.0.1 at 2022-09-23 12:09:57 +0500
+Processing by Admin::TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveAdmin::Comment Count (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3[0m  [["resource_type", "Team"], ["resource_id", 1], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3 LIMIT $4 OFFSET $5[0m  [["resource_type", "Team"], ["resource_id", 1], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb (Duration: 36.4ms | Allocations: 48890)
+Completed 200 OK in 39ms (Views: 30.6ms | ActiveRecord: 6.5ms | Allocations: 52159)
+
+
+Started GET "/admin/teams" for 127.0.0.1 at 2022-09-23 12:10:00 +0500
+Processing by Admin::TeamsController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 33.0ms | Allocations: 33542)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 1.0ms | Allocations: 35774)
+
+
+Started GET "/admin/teams/new" for 127.0.0.1 at 2022-09-23 12:10:06 +0500
+Processing by Admin::TeamsController#new as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/new.html.arb (Duration: 12.4ms | Allocations: 22243)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 23948)
+
+
+Started POST "/admin/teams" for 127.0.0.1 at 2022-09-23 12:10:10 +0500
+Processing by Admin::TeamsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"SSG"}, "commit"=>"Create Team"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTeam Create (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "SSG"], ["created_at", "2022-09-23 07:10:10.582660"], ["updated_at", "2022-09-23 07:10:10.582660"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/teams/2
+Completed 302 Found in 10ms (ActiveRecord: 1.8ms | Allocations: 5297)
+
+
+Started GET "/admin/teams/2" for 127.0.0.1 at 2022-09-23 12:10:10 +0500
+Processing by Admin::TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveAdmin::Comment Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3[0m  [["resource_type", "Team"], ["resource_id", 2], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3 LIMIT $4 OFFSET $5[0m  [["resource_type", "Team"], ["resource_id", 2], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb (Duration: 22.4ms | Allocations: 29212)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 1.3ms | Allocations: 31592)
+
+
+Started GET "/admin/teams/2" for 127.0.0.1 at 2022-09-23 12:10:11 +0500
+Processing by Admin::TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb
+  [1m[36mActiveAdmin::Comment Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3[0m  [["resource_type", "Team"], ["resource_id", 2], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = $1 AND "active_admin_comments"."resource_id" = $2 AND "active_admin_comments"."namespace" = $3 LIMIT $4 OFFSET $5[0m  [["resource_type", "Team"], ["resource_id", 2], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/show.html.arb (Duration: 32.1ms | Allocations: 28442)
+Completed 200 OK in 39ms (Views: 31.5ms | ActiveRecord: 1.8ms | Allocations: 30822)
+
+
+Started GET "/admin/teams" for 127.0.0.1 at 2022-09-23 12:10:13 +0500
+Processing by Admin::TeamsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" ORDER BY "teams"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 33.6ms | Allocations: 32838)
+Completed 200 OK in 39ms (Views: 33.4ms | ActiveRecord: 1.1ms | Allocations: 34655)
+
+
