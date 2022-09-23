@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_23_072451) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_23_074750) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -58,6 +58,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_23_072451) do
     t.index ["team_id"], name: "index_players_on_team_id"
   end
 
+  create_table "score_records", force: :cascade do |t|
+    t.integer "goals"
+    t.bigint "player_id", null: false
+    t.bigint "team_id", null: false
+    t.bigint "match_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["match_id"], name: "index_score_records_on_match_id"
+    t.index ["player_id"], name: "index_score_records_on_player_id"
+    t.index ["team_id"], name: "index_score_records_on_team_id"
+  end
+
   create_table "teams", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -101,6 +113,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_23_072451) do
 
   add_foreign_key "matches", "tournaments"
   add_foreign_key "players", "teams"
+  add_foreign_key "score_records", "matches"
+  add_foreign_key "score_records", "players"
+  add_foreign_key "score_records", "teams"
   add_foreign_key "user_follow_matches", "matches"
   add_foreign_key "user_follow_matches", "users"
 end

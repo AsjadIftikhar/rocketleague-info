@@ -1,0 +1,27 @@
+<div id="<%= dom_id score_record %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Goals:</strong>
+    <%= score_record.goals %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Player:</strong>
+    <%= score_record.player_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Team:</strong>
+    <%= score_record.team_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Match:</strong>
+    <%= score_record.match_id %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this score record", score_record, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this score record', edit_score_record_path(score_record), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

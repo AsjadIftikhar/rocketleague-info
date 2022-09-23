@@ -14,5 +14,7 @@ ActiveAdmin.register User do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
+
+  filter :user_follow_matches_match_id, as: :select, collection: Match.all, label: 'Match'
   
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :score_records
   resources :players
   resources :teams
   resources :user_follow_matches
