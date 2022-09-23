@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_22_095409) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_23_062421) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -40,6 +40,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_22_095409) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "matches", force: :cascade do |t|
+    t.datetime "date"
+    t.bigint "tournament_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tournament_id"], name: "index_matches_on_tournament_id"
+  end
+
   create_table "tournaments", force: :cascade do |t|
     t.string "title"
     t.string "location"
@@ -65,4 +73,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_22_095409) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "matches", "tournaments"
 end
