@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_many :user_follow_matches
   has_many :matches, through: :user_follow_matches
-  has_many :display_pictures, as: :imageable
+  has_one :display_picture, as: :imageable
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
