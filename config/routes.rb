@@ -1,16 +1,20 @@
 Rails.application.routes.draw do
-  resources :score_records
-  resources :players
-  resources :teams
-  resources :user_follow_matches
-  resources :matches
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  devise_for :users, controllers: {registration: 'users/registration'}
+
   resources :teams
-  resources :tournaments
-  
+  resources :tournaments do
+    resources :matches
+  end
+
+  # resources :score_records
+  # resources :players
+  # resources :teams
+  # resources :user_follow_matches
+  # resources :matches
+
   get '/news', to: 'application#show_news'
 
   # Defines the root path route ("/")
