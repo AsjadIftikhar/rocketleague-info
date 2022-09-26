@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :teams
   resources :tournaments
+  
   get '/news', to: 'application#show_news'
 
   # Defines the root path route ("/")

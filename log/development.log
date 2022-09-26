@@ -30921,3 +30921,2023 @@ Processing by Admin::DisplayPicturesController#index as HTML
 Completed 200 OK in 42ms (Views: 30.1ms | ActiveRecord: 2.0ms | Allocations: 35306)
 
 
+Started GET "/" for 127.0.0.1 at 2022-09-26 09:46:16 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 385)
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/devise/shared/_navbar.erb:9
+  Rendered devise/shared/_navbar.erb (Duration: 76.9ms | Allocations: 22030)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 126.0ms | Allocations: 104464)
+Completed 200 OK in 143ms (Views: 71.2ms | ActiveRecord: 67.8ms | Allocations: 110042)
+
+
+Started GET "/tournaments" for 127.0.0.1 at 2022-09-26 09:50:24 +0500
+Processing by TournamentsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering tournaments/index.html.erb within layouts/application
+  [1m[36mTournament Load (7.6ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+  ↳ app/views/tournaments/index.html.erb:7
+  Rendered tournaments/index.html.erb within layouts/application (Duration: 27.0ms | Allocations: 15952)
+  Rendered devise/shared/_navbar.erb (Duration: 0.2ms | Allocations: 322)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 26322)
+Completed 200 OK in 40ms (Views: 14.6ms | ActiveRecord: 21.2ms | Allocations: 29334)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 09:55:38 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (7.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.5ms | Allocations: 519)
+  Rendered teams/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 14640)
+  Rendered devise/shared/_navbar.erb (Duration: 0.2ms | Allocations: 300)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 24971)
+Completed 200 OK in 42ms (Views: 10.9ms | ActiveRecord: 25.1ms | Allocations: 34597)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2022-09-26 09:55:47 +0500
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms | Allocations: 2464)
+
+
+  
+CanCan::AccessDenied (You are not authorized to access this page.):
+  
+cancancan (3.4.0) lib/cancan/ability.rb:180:in `authorize!'
+cancancan (3.4.0) lib/cancan/controller_additions.rb:339:in `authorize!'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:40:in `authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:34:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 09:55:57 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.7ms | Allocations: 239)
+  Rendered teams/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1184)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 11419)
+Completed 200 OK in 26ms (Views: 16.2ms | ActiveRecord: 0.7ms | Allocations: 15217)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 09:56:20 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered teams/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 438)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 10260)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 0.8ms | Allocations: 13286)
+
+
+Started GET "/teams/2" for 127.0.0.1 at 2022-09-26 09:56:24 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered teams/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 438)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 10261)
+Completed 200 OK in 35ms (Views: 13.6ms | ActiveRecord: 0.6ms | Allocations: 13275)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 09:57:28 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.7ms | Allocations: 454)
+  Rendered teams/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1481)
+  Rendered devise/shared/_navbar.erb (Duration: 0.8ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 12410)
+Completed 200 OK in 32ms (Views: 22.1ms | ActiveRecord: 1.3ms | Allocations: 15314)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 09:57:30 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.3ms | Allocations: 220)
+  Rendered teams/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 930)
+  Rendered devise/shared/_navbar.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 10767)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.8ms | Allocations: 12750)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 09:58:28 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.1ms | Allocations: 455)
+  Rendered teams/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1482)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 12409)
+Completed 200 OK in 41ms (Views: 29.2ms | ActiveRecord: 1.2ms | Allocations: 15321)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 09:58:31 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.3ms | Allocations: 220)
+  Rendered teams/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 930)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 276)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 11177)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 0.7ms | Allocations: 13169)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 09:58:38 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms | Allocations: 2998)
+
+
+  
+CanCan::AccessDenied (You are not authorized to access this page.):
+  
+cancancan (3.4.0) lib/cancan/ability.rb:180:in `authorize!'
+cancancan (3.4.0) lib/cancan/controller_additions.rb:339:in `authorize!'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:40:in `authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:34:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 09:59:47 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.9ms | Allocations: 453)
+  Rendered teams/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1480)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.8ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 12817)
+Completed 200 OK in 37ms (Views: 24.3ms | ActiveRecord: 1.6ms | Allocations: 15732)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:00:04 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.8ms | Allocations: 236)
+  Rendered teams/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 915)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 10737)
+Completed 200 OK in 33ms (Views: 18.4ms | ActiveRecord: 1.4ms | Allocations: 13823)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:00:39 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (4.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.2ms | Allocations: 449)
+  Rendered teams/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1476)
+  Rendered devise/shared/_navbar.erb (Duration: 1.1ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 12402)
+Completed 200 OK in 62ms (Views: 35.2ms | ActiveRecord: 5.3ms | Allocations: 15320)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:01:01 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.4ms | Allocations: 215)
+  Rendered teams/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 925)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 276)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 10761)
+Completed 200 OK in 26ms (Views: 13.3ms | ActiveRecord: 1.4ms | Allocations: 12756)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:01:02 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 1.3ms | Allocations: 340)
+  Rendered teams/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1004)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 10826)
+Completed 200 OK in 26ms (Views: 17.2ms | ActiveRecord: 0.7ms | Allocations: 13918)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:02:02 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.9ms | Allocations: 381)
+  Rendered teams/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1409)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 12337)
+Completed 200 OK in 39ms (Views: 27.5ms | ActiveRecord: 1.2ms | Allocations: 15261)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:02:37 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.9ms | Allocations: 381)
+  Rendered teams/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1408)
+  Rendered devise/shared/_navbar.erb (Duration: 1.0ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 12743)
+Completed 200 OK in 47ms (Views: 26.5ms | ActiveRecord: 1.3ms | Allocations: 15641)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:02:42 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.4ms | Allocations: 381)
+  Rendered teams/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1408)
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.3ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 12334)
+Completed 200 OK in 18ms (Views: 11.6ms | ActiveRecord: 0.6ms | Allocations: 15253)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:03:25 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.5ms | Allocations: 491)
+  Rendered teams/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1518)
+  Rendered devise/shared/_navbar.erb (Duration: 0.8ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 12444)
+Completed 200 OK in 31ms (Views: 23.2ms | ActiveRecord: 0.8ms | Allocations: 15349)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:06:40 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.4ms | Allocations: 494)
+  Rendered teams/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1521)
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 12858)
+Completed 200 OK in 27ms (Views: 21.4ms | ActiveRecord: 0.6ms | Allocations: 15769)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:07:04 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.9ms | Allocations: 472)
+  Rendered teams/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1499)
+  Rendered devise/shared/_navbar.erb (Duration: 0.8ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.4ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 12425)
+Completed 200 OK in 27ms (Views: 18.0ms | ActiveRecord: 1.0ms | Allocations: 15332)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:07:08 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 1.0ms | Allocations: 347)
+  Rendered teams/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1013)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 10835)
+Completed 200 OK in 23ms (Views: 15.7ms | ActiveRecord: 0.6ms | Allocations: 13928)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:07:16 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:12
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.2ms | Allocations: 469)
+  Rendered teams/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1497)
+  Rendered devise/shared/_navbar.erb (Duration: 1.2ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 12423)
+Completed 200 OK in 52ms (Views: 28.3ms | ActiveRecord: 1.2ms | Allocations: 15335)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:08:12 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  Rendered teams/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 5606)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5678)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms | Allocations: 8565)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `team' for #<ActionView::Base:0x0000000002aa58>
+Did you mean?  @team
+               @teams):
+     5: 
+     6:   <div class="flex justify-between items-center">
+     7:     <h1 class="font-bold text-4xl">Teams</h1>
+     8:     <% if can? :manage, team %>
+     9:       <%= link_to 'New team', new_team_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+    10:     <% end %>
+    11:   </div>
+  
+app/views/teams/index.html.erb:8
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:08:41 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 6.8ms | Allocations: 496)
+  Rendered teams/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1549)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 12886)
+Completed 200 OK in 37ms (Views: 22.5ms | ActiveRecord: 0.9ms | Allocations: 15798)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:08:45 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.8ms | Allocations: 345)
+  Rendered teams/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1011)
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 10833)
+Completed 200 OK in 24ms (Views: 15.8ms | ActiveRecord: 0.6ms | Allocations: 13930)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:09:06 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.0ms | Allocations: 496)
+  Rendered teams/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1545)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 567)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 12471)
+Completed 200 OK in 37ms (Views: 20.0ms | ActiveRecord: 1.1ms | Allocations: 15389)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:09:18 +0500
+Processing by TeamsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 253)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-09-26 10:09:18 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 884)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4054)
+  Rendered devise/shared/_navbar.erb (Duration: 0.1ms | Allocations: 104)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 13780)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 15775)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-09-26 10:09:34 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 15ms (ActiveRecord: 1.0ms | Allocations: 1650)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 160)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1312)
+  Rendered devise/shared/_navbar.erb (Duration: 0.1ms | Allocations: 65)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 10929)
+Completed 200 OK in 292ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 12513)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-09-26 10:09:44 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 160)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1316)
+  Rendered devise/shared/_navbar.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 10968)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 11651)
+
+
+Started GET "/admin" for 127.0.0.1 at 2022-09-26 10:09:58 +0500
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 433)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2022-09-26 10:09:58 +0500
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering layout /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/shared/_links.erb (Duration: 1.3ms | Allocations: 723)
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 29.0ms | Allocations: 16779)
+  Rendered layout /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/layouts/active_admin_logged_out.html.erb (Duration: 40.8ms | Allocations: 32141)
+Completed 200 OK in 56ms (Views: 43.0ms | ActiveRecord: 7.8ms | Allocations: 35964)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2022-09-26 10:10:03 +0500
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (9.7ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+Redirected to http://0.0.0.0:3000/admin
+Completed 302 Found in 257ms (ActiveRecord: 9.7ms | Allocations: 3294)
+
+
+Started GET "/admin" for 127.0.0.1 at 2022-09-26 10:10:04 +0500
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/page/index.html.arb (Duration: 10.0ms | Allocations: 21931)
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 24754)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:10:06 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (6.6ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 63.0ms | Allocations: 59123)
+Completed 200 OK in 77ms (Views: 49.8ms | ActiveRecord: 16.4ms | Allocations: 62619)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:10:28 +0500
+Processing by TeamsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 289)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-09-26 10:10:28 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 160)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1316)
+  Rendered devise/shared/_navbar.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 11371)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 12075)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-09-26 10:10:34 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@m.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in "}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a@m.com"], ["LIMIT", 1]]
+Redirected to http://0.0.0.0:3000/teams
+Completed 302 Found in 256ms (ActiveRecord: 1.5ms | Allocations: 2389)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:10:34 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.2ms | Allocations: 344)
+  Rendered teams/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1124)
+  Rendered devise/shared/_navbar.erb (Duration: 0.1ms | Allocations: 276)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 10969)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.5ms | Allocations: 12936)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:10:41 +0500
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:10:41 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 37.6ms | Allocations: 38783)
+Completed 200 OK in 45ms (Views: 37.5ms | ActiveRecord: 1.8ms | Allocations: 40693)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.3ms | Allocations: 341)
+  Rendered teams/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1114)
+  Rendered devise/shared/_navbar.erb (Duration: 0.2ms | Allocations: 276)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 10950)
+Completed 200 OK in 66ms (Views: 8.1ms | ActiveRecord: 18.6ms | Allocations: 49238)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2022-09-26 10:10:49 +0500
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 2.9ms | Allocations: 1101)
+  Rendered teams/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1405)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 11401)
+Completed 200 OK in 33ms (Views: 27.1ms | ActiveRecord: 0.5ms | Allocations: 13388)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:10:52 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 1.8ms | Allocations: 730)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1047)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 10883)
+Completed 200 OK in 26ms (Views: 17.4ms | ActiveRecord: 1.0ms | Allocations: 13935)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:11:18 +0500
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:11:18 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Processing by Admin::UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.0ms | Allocations: 769)
+  Rendered teams/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 4421)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 1130)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 772)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 26334)
+Completed 200 OK in 41ms (Views: 31.6ms | ActiveRecord: 1.2ms | Allocations: 30378)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 40.1ms | Allocations: 51019)
+Completed 200 OK in 49ms (Views: 42.1ms | ActiveRecord: 2.3ms | Allocations: 54367)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:11:23 +0500
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:11:23 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Processing by Admin::UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mAdminUser Load (1.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (1.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.0ms | Allocations: 880)
+  Rendered teams/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3722)
+  Rendered devise/shared/_navbar.erb (Duration: 0.8ms | Allocations: 694)
+  Rendered devise/shared/_footer.erb (Duration: 0.3ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 24755)
+Completed 200 OK in 42ms (Views: 23.6ms | ActiveRecord: 2.7ms | Allocations: 28751)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 32.6ms | Allocations: 49225)
+Completed 200 OK in 41ms (Views: 34.2ms | ActiveRecord: 2.4ms | Allocations: 54491)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:11:29 +0500
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:11:29 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.7ms | Allocations: 665)
+  Rendered teams/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 6021)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered devise/shared/_navbar.erb (Duration: 1.6ms | Allocations: 2297)
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 48.6ms | Allocations: 53272)
+Completed 200 OK in 64ms (Views: 54.3ms | ActiveRecord: 1.3ms | Allocations: 56046)
+
+
+  Rendered devise/shared/_footer.erb (Duration: 12.1ms | Allocations: 16737)
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 48061)
+Completed 200 OK in 46ms (Views: 41.4ms | ActiveRecord: 1.7ms | Allocations: 51888)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:11:35 +0500
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:11:35 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.2ms | Allocations: 665)
+  Rendered teams/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 6164)
+  Rendered devise/shared/_navbar.erb (Duration: 0.7ms | Allocations: 677)
+  Rendered devise/shared/_footer.erb (Duration: 0.3ms | Allocations: 316)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 22071)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 1.3ms | Allocations: 25762)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 45.1ms | Allocations: 54570)
+Completed 200 OK in 53ms (Views: 47.1ms | ActiveRecord: 1.4ms | Allocations: 57234)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:11:50 +0500
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:11:50 +0500
+Processing by Admin::UsersController#index as HTML
+Processing by TeamsController#index as HTML
+  [1m[36mAdminUser Load (1.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.1ms | Allocations: 715)
+  Rendered teams/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2991)
+  Rendered devise/shared/_navbar.erb (Duration: 0.8ms | Allocations: 907)
+  Rendered devise/shared/_footer.erb (Duration: 5.1ms | Allocations: 8474)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 31715)
+Completed 200 OK in 55ms (Views: 34.1ms | ActiveRecord: 3.1ms | Allocations: 37179)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 47.2ms | Allocations: 52097)
+Completed 200 OK in 83ms (Views: 60.8ms | ActiveRecord: 2.0ms | Allocations: 56836)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:12:06 +0500
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:12:06 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.6ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.6ms | Allocations: 645)
+  Rendered teams/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2460)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 59.4ms | Allocations: 52721)
+Completed 200 OK in 75ms (Views: 66.4ms | ActiveRecord: 1.4ms | Allocations: 55666)
+
+
+  Rendered devise/shared/_navbar.erb (Duration: 17.3ms | Allocations: 17135)
+  Rendered devise/shared/_footer.erb (Duration: 0.4ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 43856)
+Completed 200 OK in 57ms (Views: 47.3ms | ActiveRecord: 1.5ms | Allocations: 51863)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:12:19 +0500
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:12:19 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.5ms | Allocations: 672)
+  Rendered teams/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2682)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 45.5ms | Allocations: 52960)
+Completed 200 OK in 59ms (Views: 48.1ms | ActiveRecord: 1.5ms | Allocations: 55891)
+
+
+  Rendered devise/shared/_navbar.erb (Duration: 1.0ms | Allocations: 1051)
+  Rendered devise/shared/_footer.erb (Duration: 0.4ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 43795)
+Completed 200 OK in 43ms (Views: 33.5ms | ActiveRecord: 0.8ms | Allocations: 51777)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:12:21 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.8ms | Allocations: 393)
+  Rendered teams/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1057)
+  Rendered devise/shared/_navbar.erb (Duration: 0.2ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 11025)
+Completed 200 OK in 21ms (Views: 15.2ms | ActiveRecord: 0.4ms | Allocations: 14113)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:12:24 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 2.5ms | Allocations: 1053)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1426)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 11264)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.5ms | Allocations: 14303)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:12:34 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered teams/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 586)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 10532)
+Completed 200 OK in 22ms (Views: 14.1ms | ActiveRecord: 0.6ms | Allocations: 13525)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:12:37 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 2.0ms | Allocations: 709)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 853)
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 10685)
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 0.6ms | Allocations: 13686)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:12:48 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 3.1ms | Allocations: 709)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 853)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 10685)
+Completed 200 OK in 34ms (Views: 17.4ms | ActiveRecord: 0.9ms | Allocations: 13684)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:13:21 +0500
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:13:21 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (3.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (5.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 3.0ms | Allocations: 1459)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1940)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 988)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 849)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 23568)
+Completed 200 OK in 58ms (Views: 33.1ms | ActiveRecord: 5.8ms | Allocations: 30900)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 52.3ms | Allocations: 51241)
+Completed 200 OK in 75ms (Views: 63.9ms | ActiveRecord: 3.9ms | Allocations: 56888)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:13:38 +0500
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:13:38 +0500
+Processing by Admin::UsersController#index as HTML
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (3.7ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 1.8ms | Allocations: 1793)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2241)
+  Rendered devise/shared/_navbar.erb (Duration: 0.6ms | Allocations: 856)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 562)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 23197)
+Completed 200 OK in 37ms (Views: 20.7ms | ActiveRecord: 5.8ms | Allocations: 30039)
+
+
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 44.7ms | Allocations: 53283)
+Completed 200 OK in 62ms (Views: 47.5ms | ActiveRecord: 8.8ms | Allocations: 57748)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:14:10 +0500
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:14:10 +0500
+Processing by Admin::UsersController#index as HTML
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.9ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (2.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 1.7ms | Allocations: 1272)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1797)
+  Rendered devise/shared/_navbar.erb (Duration: 0.8ms | Allocations: 976)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 875)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 23745)
+Completed 200 OK in 42ms (Views: 27.3ms | ActiveRecord: 3.4ms | Allocations: 37938)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 40.0ms | Allocations: 51471)
+Completed 200 OK in 59ms (Views: 48.5ms | ActiveRecord: 1.5ms | Allocations: 57300)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:14:11 +0500
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:14:11 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 1.0ms | Allocations: 709)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 786)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 275)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 40282)
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 54.2ms | Allocations: 51284)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 0.5ms | Allocations: 43853)
+
+
+Completed 200 OK in 60ms (Views: 53.9ms | ActiveRecord: 1.5ms | Allocations: 53333)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:14:18 +0500
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:14:18 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 1.8ms | Allocations: 1167)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1526)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered devise/shared/_navbar.erb (Duration: 2.7ms | Allocations: 2644)
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 57.5ms | Allocations: 54214)
+Completed 200 OK in 70ms (Views: 59.2ms | ActiveRecord: 1.4ms | Allocations: 56912)
+
+
+  Rendered devise/shared/_footer.erb (Duration: 1.0ms | Allocations: 661)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 41823)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.5ms | Allocations: 46782)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:14:28 +0500
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:14:28 +0500
+Processing by Admin::UsersController#index as HTML
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mTeam Load (1.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 1.8ms | Allocations: 1286)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2290)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered devise/shared/_navbar.erb (Duration: 1.6ms | Allocations: 2300)
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 44.8ms | Allocations: 52203)
+Completed 200 OK in 57ms (Views: 47.4ms | ActiveRecord: 1.8ms | Allocations: 56821)
+
+
+  Rendered devise/shared/_footer.erb (Duration: 7.8ms | Allocations: 16745)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 49440)
+Completed 200 OK in 52ms (Views: 43.6ms | ActiveRecord: 2.2ms | Allocations: 56469)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:14:41 +0500
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:14:41 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.8ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 4.6ms | Allocations: 1157)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1754)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered devise/shared/_navbar.erb (Duration: 1.8ms | Allocations: 2647)
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 49.2ms | Allocations: 54452)
+Completed 200 OK in 66ms (Views: 54.3ms | ActiveRecord: 1.8ms | Allocations: 57468)
+
+
+  Rendered devise/shared/_footer.erb (Duration: 0.9ms | Allocations: 705)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 43115)
+Completed 200 OK in 45ms (Views: 39.7ms | ActiveRecord: 1.0ms | Allocations: 50883)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:14:48 +0500
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:14:48 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (2.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 2.0ms | Allocations: 1184)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2378)
+  Rendered devise/shared/_navbar.erb (Duration: 0.6ms | Allocations: 667)
+  Rendered devise/shared/_footer.erb (Duration: 0.3ms | Allocations: 282)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 22705)
+Completed 200 OK in 42ms (Views: 25.5ms | ActiveRecord: 3.1ms | Allocations: 29967)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 47.3ms | Allocations: 51724)
+Completed 200 OK in 58ms (Views: 51.0ms | ActiveRecord: 0.9ms | Allocations: 56955)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:15:01 +0500
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:15:01 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.7ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 1.3ms | Allocations: 1183)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 4547)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 39.4ms | Allocations: 53744)
+Completed 200 OK in 62ms (Views: 46.3ms | ActiveRecord: 1.6ms | Allocations: 56558)
+
+
+  Rendered devise/shared/_navbar.erb (Duration: 9.1ms | Allocations: 18829)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 46827)
+Completed 200 OK in 38ms (Views: 28.6ms | ActiveRecord: 2.4ms | Allocations: 54401)
+
+
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:15:10 +0500
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:15:10 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+Processing by Admin::UsersController#index as HTML
+  Rendered teams/_form.html.erb (Duration: 1.6ms | Allocations: 1378)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1980)
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 618)
+  Rendered devise/shared/_footer.erb (Duration: 0.3ms | Allocations: 281)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 24677)
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 0.7ms | Allocations: 28830)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 32.2ms | Allocations: 47983)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 0.7ms | Allocations: 52084)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:15:22 +0500
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:15:22 +0500
+Processing by Admin::UsersController#index as HTML
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (4.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 2.1ms | Allocations: 1704)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2424)
+  Rendered devise/shared/_navbar.erb (Duration: 0.6ms | Allocations: 909)
+  Rendered devise/shared/_footer.erb (Duration: 0.4ms | Allocations: 610)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 23800)
+Completed 200 OK in 37ms (Views: 24.3ms | ActiveRecord: 7.6ms | Allocations: 30458)
+
+
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 40.4ms | Allocations: 51720)
+Completed 200 OK in 60ms (Views: 46.0ms | ActiveRecord: 3.1ms | Allocations: 57521)
+
+
+Started PATCH "/teams/1" for 127.0.0.1 at 2022-09-26 10:16:59 +0500
+Processing by TeamsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"NRG - 1"}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:33:in `update'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 4.1ms | Allocations: 7041)
+
+
+  
+NameError (undefined local variable or method `tournament_params' for #<TeamsController:0x0000000002d5f0>
+Did you mean?  tournament_path
+               tournament_url
+               tournaments_path):
+  
+app/controllers/teams_controller.rb:35:in `update'
+Started GET "/admin/users" for 127.0.0.1 at 2022-09-26 10:17:43 +0500
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mMatch Load (0.8ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  Rendered /Users/pakwheels/.rvm/rubies/ruby-3.0.0/lib/ruby/gems/3.0.0/gems/activeadmin-2.13.1/app/views/active_admin/resource/index.html.arb (Duration: 28.8ms | Allocations: 46892)
+Completed 200 OK in 63ms (Views: 21.5ms | ActiveRecord: 30.0ms | Allocations: 57936)
+
+
+Started PATCH "/teams/1" for 127.0.0.1 at 2022-09-26 10:17:43 +0500
+Processing by TeamsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"NRG - 1"}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:33:in `update'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 6.2ms | Allocations: 9331)
+
+
+  
+NameError (undefined local variable or method `tournament_params' for #<TeamsController:0x0000000003c578>
+Did you mean?  tournament_path
+               tournament_url
+               tournaments_path):
+  
+app/controllers/teams_controller.rb:35:in `update'
+Started PATCH "/teams/1" for 127.0.0.1 at 2022-09-26 10:17:47 +0500
+Processing by TeamsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"NRG - 1"}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:33:in `update'
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms | Allocations: 7040)
+
+
+  
+NameError (undefined local variable or method `tournament_params' for #<TeamsController:0x0000000003ccf8>
+Did you mean?  tournament_path
+               tournament_url
+               tournaments_path):
+  
+app/controllers/teams_controller.rb:35:in `update'
+Started PATCH "/teams/1" for 127.0.0.1 at 2022-09-26 10:17:51 +0500
+Processing by TeamsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"NRG - 1"}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:33:in `update'
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.7ms | Allocations: 7040)
+
+
+  
+NameError (undefined local variable or method `tournament_params' for #<TeamsController:0x0000000003d220>
+Did you mean?  tournament_path
+               tournament_url
+               tournaments_path):
+  
+app/controllers/teams_controller.rb:35:in `update'
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:17:52 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 1.8ms | Allocations: 790)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 851)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 299)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 11177)
+Completed 200 OK in 27ms (Views: 19.3ms | ActiveRecord: 0.5ms | Allocations: 14611)
+
+
+Started PATCH "/teams/1" for 127.0.0.1 at 2022-09-26 10:18:00 +0500
+Processing by TeamsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"NRG - 1"}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:33:in `update'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms | Allocations: 7027)
+
+
+  
+NameError (undefined local variable or method `tournament_params' for #<TeamsController:0x0000000003d568>
+Did you mean?  tournament_path
+               tournament_url
+               tournaments_path):
+  
+app/controllers/teams_controller.rb:35:in `update'
+Started GET "/teams/1/edit" for 127.0.0.1 at 2022-09-26 10:18:12 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 0.7ms | Allocations: 790)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 851)
+  Rendered devise/shared/_navbar.erb (Duration: 0.1ms | Allocations: 300)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 11178)
+Completed 200 OK in 22ms (Views: 7.4ms | ActiveRecord: 8.2ms | Allocations: 23309)
+
+
+Started PATCH "/teams/1" for 127.0.0.1 at 2022-09-26 10:18:17 +0500
+Processing by TeamsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "team"=>{"name"=>"NRG - 1"}, "commit"=>"Update Team", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:33:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/teams_controller.rb:35:in `update'
+  [1m[36mTeam Update (6.3ms)[0m  [1m[33mUPDATE "teams" SET "name" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["name", "NRG - 1"], ["updated_at", "2022-09-26 05:18:17.621971"], ["id", 1]]
+  ↳ app/controllers/teams_controller.rb:35:in `update'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/teams_controller.rb:35:in `update'
+Redirected to http://0.0.0.0:3000/teams/1
+Completed 302 Found in 18ms (ActiveRecord: 9.1ms | Allocations: 5659)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:18:17 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 1.0ms | Allocations: 407)
+  Rendered teams/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1194)
+  Rendered devise/shared/_navbar.erb (Duration: 0.2ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 11016)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.6ms | Allocations: 14104)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:18:21 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.4ms | Allocations: 556)
+  Rendered teams/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1612)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 276)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 11448)
+Completed 200 OK in 23ms (Views: 16.1ms | ActiveRecord: 0.8ms | Allocations: 13512)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:18:23 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.4ms | Allocations: 183)
+  Rendered teams/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 586)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 10408)
+Completed 200 OK in 22ms (Views: 13.6ms | ActiveRecord: 0.4ms | Allocations: 13411)
+
+
+Started GET "/teams/2" for 127.0.0.1 at 2022-09-26 10:18:26 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.6ms | Allocations: 183)
+  Rendered teams/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 586)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 10408)
+Completed 200 OK in 22ms (Views: 13.8ms | ActiveRecord: 0.5ms | Allocations: 13401)
+
+
+Started GET "/teams/2/edit" for 127.0.0.1 at 2022-09-26 10:18:51 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 2.6ms | Allocations: 709)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 766)
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 275)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 10601)
+Completed 200 OK in 32ms (Views: 19.1ms | ActiveRecord: 1.2ms | Allocations: 13584)
+
+
+Started GET "/teams/2" for 127.0.0.1 at 2022-09-26 10:18:55 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.5ms | Allocations: 183)
+  Rendered teams/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 586)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 10408)
+Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 0.7ms | Allocations: 13405)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:19:23 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.2ms | Allocations: 1092)
+  Rendered teams/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2216)
+  Rendered devise/shared/_navbar.erb (Duration: 0.7ms | Allocations: 559)
+  Rendered devise/shared/_footer.erb (Duration: 0.7ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 13418)
+Completed 200 OK in 38ms (Views: 28.7ms | ActiveRecord: 0.7ms | Allocations: 16316)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:20:00 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.2ms | Allocations: 1090)
+  Rendered teams/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2215)
+  Rendered devise/shared/_navbar.erb (Duration: 0.6ms | Allocations: 558)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 13119)
+Completed 200 OK in 32ms (Views: 20.9ms | ActiveRecord: 1.3ms | Allocations: 16012)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:20:08 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.2ms | Allocations: 1089)
+  Rendered teams/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2212)
+  Rendered devise/shared/_navbar.erb (Duration: 0.4ms | Allocations: 558)
+  Rendered devise/shared/_footer.erb (Duration: 0.2ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 13114)
+Completed 200 OK in 23ms (Views: 11.9ms | ActiveRecord: 1.0ms | Allocations: 15999)
+
+
+Started DELETE "/teams/%23%3CTeam::ActiveRecord_Relation:0x000000011713ade0%3E" for 127.0.0.1 at 2022-09-26 10:20:12 +0500
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"#<Team::ActiveRecord_Relation:0x000000011713ade0>"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (ActiveRecord: 0.5ms | Allocations: 2689)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Team with 'id'=#<Team::ActiveRecord_Relation:0x000000011713ade0>):
+  
+activerecord (7.0.4) lib/active_record/core.rb:284:in `find'
+cancancan (3.4.0) lib/cancan/model_adapters/abstract_adapter.rb:24:in `find'
+cancancan (3.4.0) lib/cancan/controller_resource_finder.rb:13:in `find_resource'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:110:in `load_resource_instance'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started DELETE "/teams/%23%3CTeam::ActiveRecord_Relation:0x000000011713ade0%3E" for 127.0.0.1 at 2022-09-26 10:20:28 +0500
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"#<Team::ActiveRecord_Relation:0x000000011713ade0>"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (ActiveRecord: 0.5ms | Allocations: 2674)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Team with 'id'=#<Team::ActiveRecord_Relation:0x000000011713ade0>):
+  
+activerecord (7.0.4) lib/active_record/core.rb:284:in `find'
+cancancan (3.4.0) lib/cancan/model_adapters/abstract_adapter.rb:24:in `find'
+cancancan (3.4.0) lib/cancan/controller_resource_finder.rb:13:in `find_resource'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:110:in `load_resource_instance'
+cancancan (3.4.0) lib/cancan/controller_resource_loader.rb:18:in `load_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:33:in `load_and_authorize_resource'
+cancancan (3.4.0) lib/cancan/controller_resource.rb:17:in `block in add_before_action'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:467:in `block in make_lambda'
+activesupport (7.0.4) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:20:39 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.0ms | Allocations: 1068)
+  Rendered teams/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2191)
+  Rendered devise/shared/_navbar.erb (Duration: 0.6ms | Allocations: 558)
+  Rendered devise/shared/_footer.erb (Duration: 0.5ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 13504)
+Completed 200 OK in 31ms (Views: 20.6ms | ActiveRecord: 0.8ms | Allocations: 16393)
+
+
+Started DELETE "/teams/1" for 127.0.0.1 at 2022-09-26 10:20:42 +0500
+Processing by TeamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:43:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/teams_controller.rb:44:in `destroy'
+  [1m[36mTeam Destroy (10.4ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/teams_controller.rb:44:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/teams_controller.rb:44:in `destroy'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 11.3ms | Allocations: 5204)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "teams" violates foreign key constraint "fk_rails_8880a915a5" on table "players"
+DETAIL:  Key (id)=(1) is still referenced from table "players".
+):
+  
+app/controllers/teams_controller.rb:44:in `destroy'
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:21:30 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 0.7ms | Allocations: 262)
+  Rendered teams/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 976)
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 276)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 11223)
+Completed 200 OK in 37ms (Views: 18.7ms | ActiveRecord: 8.3ms | Allocations: 13216)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:21:32 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 1.5ms | Allocations: 371)
+  Rendered teams/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1034)
+  Rendered devise/shared/_navbar.erb (Duration: 0.5ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 10856)
+Completed 200 OK in 27ms (Views: 16.3ms | ActiveRecord: 0.7ms | Allocations: 13950)
+
+
+Started GET "/teams/1" for 127.0.0.1 at 2022-09-26 10:21:34 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.5ms | Allocations: 136)
+  Rendered teams/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 539)
+  Rendered devise/shared/_navbar.erb (Duration: 0.4ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 10361)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 0.7ms | Allocations: 13378)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:22:01 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (1.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.6ms | Allocations: 1068)
+  Rendered teams/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2191)
+  Rendered devise/shared/_navbar.erb (Duration: 0.9ms | Allocations: 558)
+  Rendered devise/shared/_footer.erb (Duration: 0.6ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 13093)
+Completed 200 OK in 27ms (Views: 16.6ms | ActiveRecord: 1.7ms | Allocations: 15983)
+
+
+Started GET "/teams/2" for 127.0.0.1 at 2022-09-26 10:22:02 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 1.5ms | Allocations: 659)
+  Rendered teams/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 929)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 10814)
+Completed 200 OK in 38ms (Views: 29.6ms | ActiveRecord: 0.5ms | Allocations: 13891)
+
+
+Started GET "/teams" for 127.0.0.1 at 2022-09-26 10:22:10 +0500
+Processing by TeamsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering teams/index.html.erb within layouts/application
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/views/teams/index.html.erb:14
+  Rendered collection of teams/_team.html.erb [2 times] (Duration: 1.1ms | Allocations: 806)
+  Rendered teams/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1579)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 274)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 11514)
+Completed 200 OK in 26ms (Views: 14.5ms | ActiveRecord: 1.2ms | Allocations: 13490)
+
+
+Started GET "/teams/2/edit" for 127.0.0.1 at 2022-09-26 10:22:11 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 3.4ms | Allocations: 1053)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1295)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 275)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 11129)
+Completed 200 OK in 31ms (Views: 22.7ms | ActiveRecord: 0.5ms | Allocations: 14190)
+
+
+Started GET "/teams/2" for 127.0.0.1 at 2022-09-26 10:22:13 +0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/show.html.erb within layouts/application
+  Rendered teams/_team.html.erb (Duration: 0.8ms | Allocations: 422)
+  Rendered teams/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 507)
+  Rendered devise/shared/_navbar.erb (Duration: 0.3ms | Allocations: 273)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 10329)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 0.6ms | Allocations: 13320)
+
+
+Started GET "/teams/2/edit" for 127.0.0.1 at 2022-09-26 10:22:15 +0500
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:29:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (Duration: 2.2ms | Allocations: 709)
+  Rendered teams/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 766)
+  Rendered devise/shared/_navbar.erb (Duration: 0.4ms | Allocations: 275)
+  Rendered devise/shared/_footer.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 10600)
+Completed 200 OK in 26ms (Views: 17.2ms | ActiveRecord: 0.5ms | Allocations: 13609)
+
+
