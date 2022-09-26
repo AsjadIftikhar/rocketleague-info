@@ -1,7 +1,7 @@
 <%= form_for @tournament do |form| %>
   <div>
     <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full"%>
     <% @tournament.errors.full_messages_for(:title).each do |message| %>
       <div><%= message %></div>
     <% end %>
@@ -9,13 +9,13 @@
 
   <div>
     <%= form.label :location %><br>
-    <%= form.text_field :location %><br>
+    <%= form.text_field :location, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %><br>
     <% @tournament.errors.full_messages_for(:location).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
 
-  <div>
+  <div class="my-4">
     <%= form.label :start_date %><br>
     <%= form.date_select :start_date %><br>
     <% @tournament.errors.full_messages_for(:start_date).each do |message| %>
@@ -23,7 +23,7 @@
     <% end %>
   </div>
 
-  <div>
+  <div class="my-4">
     <%= form.label :end_date %><br>
     <%= form.date_select :end_date %><br>
     <% @tournament.errors.full_messages_for(:end_date).each do |message| %>
@@ -31,7 +31,7 @@
     <% end %>
   </div>
 
-  <div class="my-4 flex text-blue-500 hover:text-blue-600">
-    <%= form.submit %>
+  <div class="my-6 flex text-blue-500 hover:text-blue-600">
+    <%= form.submit class: "rounded-lg py-2 px-4 bg-blue-600 text-white inline-block font-light cursor-pointer" %>
   </div>
 <% end %>
