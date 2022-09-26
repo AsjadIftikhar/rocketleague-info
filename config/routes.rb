@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   resources :players
-  # resources :score_records
+
   # resources :user_follow_matches
 
   get '/news', to: 'application#show_news'

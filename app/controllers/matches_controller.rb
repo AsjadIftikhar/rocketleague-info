@@ -6,7 +6,13 @@ class MatchesController < InheritedResources::Base
     @match = @tournament.match
   end
   def show
-    @match = Match.find(params[:id])
+    @tournament = Tournament.find(params[:tournament_id])
+    @match = @tournament.match.find(params[:id])
+    @team_1_scores = @match.score_records
+
+    @team_1_scores = @match.score_records.where(team_id: @match.team_1_id)
+    @team_2_scores = @match.score_records.where(team_id: @match.team_2_id)
+
   end
 
   def new

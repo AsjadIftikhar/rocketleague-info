@@ -4,12 +4,85 @@
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
 
-    <%= render @match %>
-
-    <%= link_to 'Edit this match', edit_match_path(@match), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <div class="inline-block ml-2">
-      <%= button_to 'Destroy this match', match_path(@match), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+  <h2 class="py-6 text-4xl font-light">
+    <span class="text-blue-700"><%= @match.team_2.name %></span>
+    vs
+    <span class="text-red-700"><%= @match.team_1.name %></span>
+  </h2>
+  <div class="flex space-x-6">
+    <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <caption class="p-5 text-lg text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+          Score Card
+        </caption>
+        <thead class="text-xs text-gray-700 uppercase bg-blue-100 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+          <th scope="col" class="py-3 px-6">
+            Player Name
+          </th>
+          <th scope="col" class="py-3 px-6">
+            Goals
+          </th>
+          <th scope="col" class="py-3 px-6">
+            Total
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @team_1_scores.each do |ts| %>
+          <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+              <%= ts.player.name %>
+            </th>
+            <td class="py-4 px-6">
+              <%= ts.goals %>
+            </td>
+            <td class="py-4 px-6">
+            </td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
     </div>
-    <%= link_to 'Back to matches', matches_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+      <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <caption class="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+          Score Card
+        </caption>
+        <thead class="text-xs text-gray-700 uppercase bg-red-100 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+          <th scope="col" class="py-3 px-6">
+            Player Name
+          </th>
+          <th scope="col" class="py-3 px-6">
+            Goals
+          </th>
+          <th scope="col" class="py-3 px-6">
+            Total
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @team_2_scores.each do |ts| %>
+          <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+              <%= ts.player.name %>
+            </th>
+            <td class="py-4 px-6">
+              <%= ts.goals %>
+            </td>
+            <td class="py-4 px-6">
+
+            </td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
   </div>
 </div>
