@@ -1,9 +1,4 @@
-<div id="<%= dom_id match %>" class="bg-gray-100 px-4 py-2 my-4 rounded-lg shadow">
-
-  <p class="mt-4 rounded-lg py-2 block text-blue-500 text-2xl">
-    <%= match.tournament.title %>
-  </p>
-
+<div id="<%= dom_id match %>" class="w-1/2 bg-gray-100 px-4 py-2 my-4 rounded-lg shadow">
   <div class="mt-4 rounded-lg py-2 block bg-gray-100 font-medium">
     <%= match.team_1.name %> vs
     <%= match.team_2.name %>
@@ -13,12 +8,11 @@
   </div>
 
 
-  <% if action_name != "show" %>
+  <% if action_name != "show" and can? :manage, @match%>
     <%#= link_to "Show this match", match, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <div class="flex space-x-4 mt-4">
       <%= link_to 'Edit', edit_tournament_match_path(match.tournament_id, match), class: "rounded-lg m-2 px-2 bg-blue-800 inline-block font-light text-white shadow" %>
       <%= button_to "Delete", { :controller => :matches, :action => 'destroy', :id => match.id }, :method => :delete, class: "px-2 rounded text-white bg-red-500 shadow" %>
-      <hr class="mt-6">
     </div>
   <% end %>
 </div>
