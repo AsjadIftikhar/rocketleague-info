@@ -37,9 +37,25 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000, protocol: 'http' }
 
+  config.action_mailer.delivery_method = :smtp
+  # host = 'pakeventures.com'
+  # config.action_mailer.default_url_options = { host: host }
+
+  # SMTP settings for gmail
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "mail.smtp2go.com",
+    port: 8025, #2525 8025, 587 and 25 can also be used.
+
+    domain: "mrdoc.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: "mrdocmailer",
+    password: "Elc54321"
+  }
 
   config.action_mailer.perform_caching = false
 

@@ -4,6 +4,8 @@ class MatchesController < InheritedResources::Base
   def index
     @tournament = Tournament.find(params[:tournament_id])
     @match = @tournament.match
+
+
   end
   def show
     @tournament = Tournament.find(params[:tournament_id])

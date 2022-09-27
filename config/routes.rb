@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   devise_for :users, controllers: {registration: 'users/registration'}
 
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
   resources :teams
   resources :tournaments do
     resources :matches
