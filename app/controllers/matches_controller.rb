@@ -13,6 +13,9 @@ class MatchesController < InheritedResources::Base
     @team_1_scores = @match.score_records.where(team_id: @match.team_1_id)
     @team_2_scores = @match.score_records.where(team_id: @match.team_2_id)
 
+    @team_1_total = @team_1_scores.sum(:goals)
+    @team_2_total = @team_2_scores.sum(:goals)
+
   end
 
   def new

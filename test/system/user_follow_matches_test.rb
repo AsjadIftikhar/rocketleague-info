@@ -14,7 +14,7 @@ class UserFollowMatchesTest < ApplicationSystemTestCase
     visit user_follow_matches_url
     click_on "New user follow match"
 
-    fill_in "Time before notification", with: @user_follow_match.time_before_notification
+    fill_in "Hours before notification", with: @user_follow_match.hours_before_notification
     click_on "Create User follow match"
 
     assert_text "User follow match was successfully created"
@@ -25,7 +25,7 @@ class UserFollowMatchesTest < ApplicationSystemTestCase
     visit user_follow_match_url(@user_follow_match)
     click_on "Edit this user follow match", match: :first
 
-    fill_in "Time before notification", with: @user_follow_match.time_before_notification
+    fill_in "Hours before notification", with: @user_follow_match.hours_before_notification
     click_on "Update User follow match"
 
     assert_text "User follow match was successfully updated"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_26_071754) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_27_071139) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -126,11 +126,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_26_071754) do
   end
 
   create_table "user_follow_matches", force: :cascade do |t|
-    t.time "time_before_notification"
     t.bigint "match_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "hours_before_notification"
     t.index ["match_id"], name: "index_user_follow_matches_on_match_id"
     t.index ["user_id"], name: "index_user_follow_matches_on_user_id"
   end

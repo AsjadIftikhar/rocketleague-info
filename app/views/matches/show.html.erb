@@ -1,20 +1,15 @@
-<div class="w-full flex">
+<div class="">
   <div class="">
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
 
-  <h2 class="py-6 text-4xl font-light">
-    <span class="text-blue-700"><%= @match.team_2.name %></span>
-    vs
-    <span class="text-red-700"><%= @match.team_1.name %></span>
+  <h2 class="py-6 px-2 text-4xl font-light">
+    <span class="text-blue-700"><%= @match.team_1.name %></span>
   </h2>
-  <div class="flex space-x-6">
-    <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
-      <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <caption class="p-5 text-lg text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
-          Score Card
-        </caption>
+  <div class="w-1/2 my-4 space-y-6">
+    <div class=" shadow-md sm:rounded-lg">
+      <table class="w-full text-left text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-blue-100 dark:bg-gray-700 dark:text-gray-400">
         <tr>
           <th scope="col" class="py-3 px-6">
@@ -22,9 +17,6 @@
           </th>
           <th scope="col" class="py-3 px-6">
             Goals
-          </th>
-          <th scope="col" class="py-3 px-6">
-            Total
           </th>
         </tr>
         </thead>
@@ -37,18 +29,24 @@
             <td class="py-4 px-6">
               <%= ts.goals %>
             </td>
-            <td class="py-4 px-6">
-            </td>
           </tr>
         <% end %>
+        <tr>
+          <th class="py-4 px-6 font-bold text-gray-900">
+            Total
+          </th>
+          <td class="py-4 px-6 font-bold text-gray-900">
+            <%= @team_1_total %>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
-    <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+    <h2 class="py-2 text-4xl font-light">
+      <span class="text-red-700"><%= @match.team_2.name %></span>
+    </h2>
+    <div class=" shadow-md sm:rounded-lg">
       <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <caption class="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
-          Score Card
-        </caption>
         <thead class="text-xs text-gray-700 uppercase bg-red-100 dark:bg-gray-700 dark:text-gray-400">
         <tr>
           <th scope="col" class="py-3 px-6">
@@ -56,9 +54,6 @@
           </th>
           <th scope="col" class="py-3 px-6">
             Goals
-          </th>
-          <th scope="col" class="py-3 px-6">
-            Total
           </th>
         </tr>
         </thead>
@@ -71,11 +66,16 @@
             <td class="py-4 px-6">
               <%= ts.goals %>
             </td>
-            <td class="py-4 px-6">
-
-            </td>
           </tr>
         <% end %>
+        <tr>
+          <th class="py-4 px-6 font-bold text-gray-900">
+            Total
+          </th>
+          <td class="py-4 px-6 font-bold text-gray-900">
+            <%= @team_2_total %>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
