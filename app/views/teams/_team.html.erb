@@ -1,0 +1,12 @@
+<div id="<%= dom_id team %>" class="w-1/2 bg-gray-100 px-4 py-2 my-4 rounded-lg shadow">
+  <p class="my-4 text-blue-700 text-xl">
+    <%= link_to team.name, team, class: "rounded-lg py-2 bg-gray-100 inline-block font-medium" %>
+  </p>
+
+  <% if can? :manage, team %>
+    <%= link_to 'Edit', edit_team_path(team), class: "rounded-lg m-2 px-2 bg-blue-800 inline-block font-light text-white shadow" %>
+    <div class="inline-block ml-2">
+      <%= button_to 'Delete', team_path(team), method: :delete, class: "px-2 rounded text-white bg-red-500 shadow" %>
+    </div>
+  <% end %>
+</div>

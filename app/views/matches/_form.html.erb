@@ -1,0 +1,32 @@
+<%= form_with(model: match, class: "contents", url: [match.tournament, match]) do |form| %>
+  <% if match.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(match.errors.count, "error") %> prohibited this match from being saved:</h2>
+
+      <ul>
+        <% match.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-6">
+    <%= form.label :date %>
+    <%= form.datetime_field :date, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-6">
+    <%= form.label :team_1_id %>
+    <%= form.select :team_1_id, options_for_select(Team.all.map{|s|[s.name, s.id]}), class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-6">
+    <%= form.label :team_2_id %>
+    <%= form.select :team_2_id, options_for_select(Team.all.map{|s|[s.name, s.id]}), class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline my-6">
+    <%= form.submit class: "rounded-lg py-2 px-4 bg-blue-600 text-white inline-block font-light cursor-pointer" %>
+  </div>
+<% end %>
