@@ -17,7 +17,6 @@ class TeamsController < InheritedResources::Base
 
   def create
     @team = Team.new(team_params)
-
     if @team.save
       redirect_to(:controller => 'teams', :action => 'index')
     else
@@ -49,7 +48,7 @@ class TeamsController < InheritedResources::Base
   private
 
   def team_params
-    params.require(:team).permit(:name)
+    params.require(:team).permit(:name, :banner)
   end
 
 end
