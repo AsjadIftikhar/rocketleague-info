@@ -79,4 +79,6 @@ gem 'country-select'
 gem "font-awesome-sass", "~> 6.2.0"
 gem "tailwindcss-rails", "~> 2.0"
 gem 'sidekiq'
+gem 'elasticsearch-model', '~> 7.2', '>= 7.2.1'
+gem 'elasticsearch-rails', '~> 7.2', '>= 7.2.1'
 gem "byebug", "~> 11.1"
