@@ -53,8 +53,8 @@ Rails.application.configure do
     domain: "mrdoc.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "mrdocmailer",
-    password: "Elc54321"
+    user_name: "rlmailer",
+    password: "BopFxdjnFEaHwyy0"
   }
 
   config.action_mailer.perform_caching = false
