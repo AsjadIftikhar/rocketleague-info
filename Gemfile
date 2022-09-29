@@ -78,5 +78,5 @@ gem 'nokogiri'
 gem 'country-select'
 gem "font-awesome-sass"
 gem "tailwindcss-rails"
-gem 'sidekiq'
+# gem 'sidekiq'
 gem "byebug"
