@@ -65,7 +65,7 @@
               <td class="py-4 px-6">
                 <div class="flex space-x-4">
                   <%= link_to 'Edit', edit_player_path(player), class: "rounded-lg m-2 px-2 bg-blue-800 inline-block font-light text-white shadow" %>
-                  <%= button_to "Delete", { :controller => :players, :action => 'destroy', :id => player.id }, :method => :delete, class: "px-2 rounded text-white bg-red-500 shadow" %>
+                  <%= button_to "Delete", { :controller => :players, :action => 'destroy', :id => player.id }, :method => :delete, class: "px-2 m-2 rounded text-white bg-red-500 shadow" %>
                 </div>
               </td>
             <% end %>

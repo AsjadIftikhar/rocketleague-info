@@ -16,7 +16,7 @@
 
   <% if action_name != "show" and can? :manage, @match%>
       <%= link_to "Edit", edit_tournament_match_path(match.tournament_id, match), class: "rounded-lg m-2 px-2 bg-blue-800 inline-block font-light text-white shadow" %>
-      <%= button_to "Delete", { :controller => :matches, :action => 'destroy', :id => match.id }, :method => :delete, class: "px-2 rounded text-white bg-red-500 shadow" %>
+      <%= button_to "Delete", { :controller => :matches, :action => 'destroy', :id => match.id }, :method => :delete, class: "px-2 m-2 rounded text-white bg-red-500 shadow" %>
   <% end %>
     </div>
 </div>
