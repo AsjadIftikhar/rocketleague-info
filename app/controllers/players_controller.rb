@@ -4,7 +4,7 @@ class PlayersController < InheritedResources::Base
 
   def index
     query = params[:q]
-    if not query.empty?
+    if query and not query.empty?
       @players = Player.where("name = ? or country = ?", query, query)
     else
       @players = Player.all
