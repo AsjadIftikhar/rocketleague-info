@@ -21,18 +21,17 @@ class Player < ApplicationRecord
 
   class << self
     def custom_search(query)
+      # multi_search_params = {
+      #   query: {
+      #     multi_match: {
+      #       query: query,
+      #       fields: %w[name teams.name],
+      #       operator: "and"
+      #     }
+      #   }
+      # }
       __elasticsearch__.search(query)
     end
-
-    # def multi_match_search(query)
-    #   {
-    #     multi_match: {
-    #       query: query,
-    #       type: "best_fields",
-    #       fields: %w[name^4 age^1 country^2 teams.name^3],
-    #       operator: "and"
-    #     }
-    #   }
-    # end
+    
   end
 end
