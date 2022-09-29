@@ -1,4 +1,4 @@
 class Team < ApplicationRecord
   has_many :players
-  has_many :display_pictures, as: :imageable
+  has_one_attached :banner
 end
