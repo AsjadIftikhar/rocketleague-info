@@ -76,7 +76,7 @@ gem 'cancancan'
 gem 'activeadmin'
 gem 'nokogiri'
 gem 'country-select'
-gem "font-awesome-sass", "~> 6.2.0"
-gem "tailwindcss-rails", "~> 2.0"
+gem "font-awesome-sass"
+gem "tailwindcss-rails"
 gem 'sidekiq'
-gem "byebug", "~> 11.1"
+gem "byebug"

@@ -301,13 +301,13 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   bootsnap
-  byebug (~> 11.1)
+  byebug
   cancancan
   capybara
   country-select
   debug
   devise
-  font-awesome-sass (~> 6.2.0)
+  font-awesome-sass
   importmap-rails
   jbuilder
   nokogiri
@@ -319,7 +319,7 @@ DEPENDENCIES
   sidekiq
   sprockets-rails
   stimulus-rails
-  tailwindcss-rails (~> 2.0)
+  tailwindcss-rails
   turbo-rails
   tzinfo-data
   web-console
